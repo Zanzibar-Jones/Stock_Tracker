@@ -76,6 +76,8 @@ def get_options_play_data(ticker_symbol, earnings_date):
     out = {
         "spot": None,
         "post_earnings_exp": None,
+        "days_post_earnings": None,
+        "straddle_price": None,
         "implied_move_pct": None,
         "atm_iv_pct": None,
         "historical_moves": [],
@@ -90,6 +92,12 @@ def get_options_play_data(ticker_symbol, earnings_date):
         if post_exp and spot:
             out["post_earnings_exp"] = post_exp
             try:
+                exp_date = datetime.strptime(post_exp, "%Y-%m-%d").date()
+                out["days_post_earnings"] = (exp_date - earnings_date).days
+            except Exception:
+                pass
+
+            try:
                 chain = t.option_chain(post_exp)
                 calls, puts = chain.calls, chain.puts
                 if not calls.empty and not puts.empty:
@@ -102,6 +110,7 @@ def get_options_play_data(ticker_symbol, earnings_date):
                     pm = _midprice(p)
                     if cm > 0 and pm > 0:
                         straddle = cm + pm
+                        out["straddle_price"] = round(straddle, 2)
                         out["implied_move_pct"] = round((straddle / spot) * 100, 2)
 
                     civ = c.get("impliedVolatility", 0) or 0
@@ -143,19 +152,15 @@ def get_options_play_data(ticker_symbol, earnings_date):
 
 
 def compute_verdict(play, rank_change):
-    """Return verdict dict comparing implied move to historical avg.
-    Returns None if there isn't enough data to score."""
     if not play or not play.get("implied_move_pct"):
         return None
     moves = play.get("historical_moves") or []
     if len(moves) < 2:
         return None
-
     im = play["implied_move_pct"]
     avg_hist = sum(abs(m["move_pct"]) for m in moves) / len(moves)
     if avg_hist <= 0:
         return None
-
     ratio = im / avg_hist
 
     rc = rank_change if rank_change is not None else 0
@@ -172,11 +177,8 @@ def compute_verdict(play, rank_change):
         signal = "sell_premium"
         label = "Premium expensive"
         diff = round((ratio - 1) * 100)
-        reason = (
-            f"Implied move (±{im}%) is {diff}% above historical avg "
-            f"(±{avg_hist:.1f}%, last {len(moves)}). Market pricing more vol "
-            f"than the stock has typically delivered on earnings."
-        )
+        reason = (f"Implied move (±{im}%) is {diff}% above historical avg "
+                  f"(±{avg_hist:.1f}%, last {len(moves)}). Market pricing more vol than typical.")
         if direction == "bullish":
             suggested = "Put credit spread (sell premium, bullish bias)"
         elif direction == "bearish":
@@ -187,11 +189,8 @@ def compute_verdict(play, rank_change):
         signal = "buy_premium"
         label = "Premium cheap"
         diff = round((1 - ratio) * 100)
-        reason = (
-            f"Implied move (±{im}%) is {diff}% below historical avg "
-            f"(±{avg_hist:.1f}%, last {len(moves)}). Market under-pricing "
-            f"typical earnings volatility."
-        )
+        reason = (f"Implied move (±{im}%) is {diff}% below historical avg "
+                  f"(±{avg_hist:.1f}%, last {len(moves)}). Market under-pricing typical earnings vol.")
         if direction == "bullish":
             suggested = "Long calls (buy premium, bullish bias)"
         elif direction == "bearish":
@@ -202,10 +201,8 @@ def compute_verdict(play, rank_change):
         signal = "neutral"
         label = "Fairly priced"
         diff = round((ratio - 1) * 100)
-        reason = (
-            f"Implied move (±{im}%) within {abs(diff)}% of historical avg "
-            f"(±{avg_hist:.1f}%, last {len(moves)}). No clear edge from this metric alone."
-        )
+        reason = (f"Implied move (±{im}%) within {abs(diff)}% of historical avg "
+                  f"(±{avg_hist:.1f}%, last {len(moves)}).")
         suggested = "No edge from this signal — trade only on direction conviction"
 
     return {
@@ -228,8 +225,8 @@ def main():
     tickers_data = []
     today = date.today()
 
-    print(f"{'#':>3}. {'TICKER':<7} {'EARN':<10} {'IM%':>7} {'HIST%':>7}  VERDICT")
-    print("-" * 60)
+    print(f"{'#':>3}. {'TICKER':<7} {'EARN':<10} {'STR$':>6} {'IM%':>7} {'HIST%':>7}  VERDICT")
+    print("-" * 65)
 
     for stock in results[:TOP_N]:
         rank = int(stock.get("rank", 0))
@@ -250,21 +247,31 @@ def main():
 
         play_data = get_options_play_data(ticker, earnings) if earnings else None
         verdict = compute_verdict(play_data, change) if play_data else None
-        if play_data and verdict:
-            play_data["verdict"] = verdict
-        elif play_data:
-            play_data["verdict"] = None
+        if play_data:
+            play_data["verdict"] = verdict if verdict else None
 
         if play_data:
+            sp = play_data.get("straddle_price")
             im = play_data.get("implied_move_pct")
             moves = play_data.get("historical_moves") or []
             avg_hist = round(sum(abs(m["move_pct"]) for m in moves) / len(moves), 2) if moves else None
             v_label = verdict["label"] if verdict else "—"
             print(f"{rank:>3}. {ticker:<7} {earnings.isoformat():<10} "
+                  f"{('$'+str(sp)) if sp else '—':>6} "
                   f"{(str(im)+'%') if im else '—':>7} "
                   f"{(str(avg_hist)+'%') if avg_hist else '—':>7}  {v_label}")
         else:
-            print(f"{rank:>3}. {ticker:<7} {'—':<10} {'—':>7} {'—':>7}  —")
+            print(f"{rank:>3}. {ticker:<7} {'—':<10} {'—':>6} {'—':>7} {'—':>7}  —")
+
+        # Try to get spot even when no earnings (so SPY/QQQ get a price too)
+        spot_only = None
+        if not play_data:
+            try:
+                spot_only = get_spot(yf.Ticker(ticker))
+                if spot_only:
+                    spot_only = round(float(spot_only), 2)
+            except Exception:
+                pass
 
         tickers_data.append({
             "rank": rank,
@@ -275,6 +282,7 @@ def main():
             "momentum_label": momentum_label,
             "next_earnings": earnings.isoformat() if earnings else None,
             "days_to_earnings": days_to_earnings,
+            "spot": (play_data["spot"] if play_data and play_data.get("spot") else spot_only),
             "play": play_data,
         })
 
@@ -293,6 +301,8 @@ def main():
             ]
             if play_data and play_data.get("implied_move_pct"):
                 desc_lines.append(f"Implied move: ±{play_data['implied_move_pct']}%")
+                if play_data.get("straddle_price"):
+                    desc_lines.append(f"ATM straddle: ${play_data['straddle_price']} (exp {play_data.get('post_earnings_exp')})")
                 hm = play_data.get("historical_moves") or []
                 if hm:
                     avg = sum(abs(m["move_pct"]) for m in hm) / len(hm)
