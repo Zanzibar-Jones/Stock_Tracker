@@ -37,13 +37,10 @@
   }
 
   .topbar {
-    position: sticky;
-    top: 0;
-    z-index: 10;
+    position: sticky; top: 0; z-index: 10;
     background: var(--bg);
     border-bottom: 1px solid var(--border);
   }
-
   header { padding: 14px 20px 6px; }
   header h1 { font-size: 22px; font-weight: 700; letter-spacing: -0.02em; }
   .updated { color: var(--text-2); font-size: 12px; font-family: var(--mono); margin-top: 2px; }
@@ -57,15 +54,17 @@
   }
   nav.tabs button.active { color: var(--text); border-bottom-color: var(--blue); }
 
-  main { padding: 8px 0 40px; }
+  main { padding: 0 0 40px; }
 
+  .ticker-row-wrapper { border-bottom: 1px solid var(--border); }
+  .ticker-row-wrapper.expanded { background: var(--surface); }
   .ticker-row {
     display: grid;
     grid-template-columns: 28px 1fr auto;
     gap: 12px;
     align-items: center;
     padding: 14px 20px;
-    border-bottom: 1px solid var(--border);
+    cursor: pointer;
   }
   .rank { color: var(--text-3); font-family: var(--mono); font-size: 13px; text-align: right; }
   .ticker-info { min-width: 0; }
@@ -98,19 +97,63 @@
   .earnings-pill.imminent { background: rgba(243, 156, 18, 0.18); color: var(--amber); }
   .earnings-pill.none { opacity: 0.4; }
 
+  /* Expanded play panel */
+  .play-panel {
+    padding: 4px 20px 18px 60px;
+    font-family: var(--mono);
+    font-size: 13px;
+  }
+  .play-panel-empty {
+    padding: 10px 20px 16px 60px;
+    color: var(--text-3); font-size: 12px; font-style: italic;
+  }
+  .play-row {
+    display: flex; gap: 18px; flex-wrap: wrap;
+    margin-bottom: 14px;
+  }
+  .play-stat { min-width: 80px; }
+  .play-label {
+    color: var(--text-3); font-size: 10px;
+    text-transform: uppercase; letter-spacing: 0.06em;
+    display: block;
+  }
+  .play-value { color: var(--text); font-weight: 600; font-size: 15px; }
+  .play-section-label {
+    font-size: 10px; color: var(--text-3);
+    text-transform: uppercase; letter-spacing: 0.06em;
+    margin: 6px 0 8px;
+  }
+  .play-moves { display: flex; flex-direction: column; gap: 6px; max-width: 240px; }
+  .play-move { display: flex; justify-content: space-between; }
+  .play-move-date { color: var(--text-2); }
+  .play-move-pct { font-weight: 600; }
+  .play-avg {
+    margin-top: 10px;
+    color: var(--text-2);
+    font-size: 12px;
+  }
+  .play-footnote {
+    color: var(--text-3); font-size: 11px; margin-top: 12px;
+    border-top: 1px solid var(--border); padding-top: 8px;
+  }
+
+  /* Calendar agenda view */
   .agenda-section { padding: 20px 20px 8px; }
   .agenda-section h2 {
     font-size: 11px; font-weight: 700; color: var(--text-3);
     text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 12px;
   }
   .agenda-day { margin-bottom: 16px; }
-  .agenda-date { font-size: 13px; color: var(--text-2); font-family: var(--mono); margin-bottom: 6px; }
+  .agenda-date {
+    font-size: 13px; color: var(--text-2); font-family: var(--mono);
+    margin-bottom: 6px;
+  }
   .agenda-event {
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 10px;
     padding: 12px 14px;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
   }
   .agenda-event-line1 { display: flex; justify-content: space-between; align-items: baseline; }
   .agenda-event-ticker { font-family: var(--mono); font-weight: 700; font-size: 16px; }
@@ -119,6 +162,18 @@
   .agenda-event-meta {
     font-size: 12px; color: var(--text-2); font-family: var(--mono); margin-top: 6px;
   }
+  .agenda-event-play {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid var(--border);
+    font-size: 12px;
+    color: var(--text-2);
+    font-family: var(--mono);
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .agenda-event-play span { color: var(--text); font-weight: 600; }
 
   .state { text-align: center; padding: 60px 20px; color: var(--text-2); }
   .state.error { color: var(--red); }
@@ -146,7 +201,7 @@ const $content = document.getElementById('content');
 const $updated = document.getElementById('updated');
 const $tabs = document.querySelectorAll('nav.tabs button');
 
-let state = { data: null, view: 'trending' };
+let state = { data: null, view: 'trending', expandedKey: null };
 
 async function load() {
   try {
@@ -181,11 +236,9 @@ function momentumArrow(label) {
   if (label === 'NEW') return '★ NEW';
   return '–';
 }
-
 function escapeHTML(s) {
   return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 }
-
 function formatEarnings(t) {
   if (!t.next_earnings) return 'no earnings';
   const d = new Date(t.next_earnings + 'T00:00:00');
@@ -196,28 +249,83 @@ function formatEarnings(t) {
   return `Earnings ${dStr} · ${days}d`;
 }
 
+function avgAbsMove(moves) {
+  if (!moves || !moves.length) return null;
+  return moves.reduce((s, m) => s + Math.abs(m.move_pct), 0) / moves.length;
+}
+
+function renderPlayPanel(t) {
+  if (!t.next_earnings) {
+    return `<div class="play-panel-empty">No upcoming catalyst — no options play data</div>`;
+  }
+  const p = t.play;
+  if (!p || (!p.implied_move_pct && !p.historical_moves?.length)) {
+    return `<div class="play-panel-empty">Options data unavailable for this ticker</div>`;
+  }
+
+  const avg = avgAbsMove(p.historical_moves);
+  const moves = p.historical_moves || [];
+
+  const movesHTML = moves.length ? `
+    <div class="play-section-label">Last ${moves.length} earnings reactions</div>
+    <div class="play-moves">
+      ${moves.map(m => {
+        const cls = m.move_pct >= 0 ? 'momentum-up' : 'momentum-down';
+        const sign = m.move_pct >= 0 ? '+' : '';
+        return `<div class="play-move">
+          <span class="play-move-date">${m.date}</span>
+          <span class="play-move-pct ${cls}">${sign}${m.move_pct.toFixed(2)}%</span>
+        </div>`;
+      }).join('')}
+    </div>
+    ${avg !== null ? `<div class="play-avg">Avg absolute move: ±${avg.toFixed(2)}%</div>` : ''}
+  ` : '';
+
+  return `
+    <div class="play-panel">
+      <div class="play-row">
+        ${p.spot ? `<div class="play-stat"><span class="play-label">Spot</span><span class="play-value">$${p.spot}</span></div>` : ''}
+        ${p.implied_move_pct ? `<div class="play-stat"><span class="play-label">Implied move</span><span class="play-value">±${p.implied_move_pct}%</span></div>` : ''}
+        ${p.atm_iv_pct ? `<div class="play-stat"><span class="play-label">ATM IV</span><span class="play-value">${p.atm_iv_pct}%</span></div>` : ''}
+      </div>
+      ${movesHTML}
+      <div class="play-footnote">
+        ${p.post_earnings_exp ? `Exp ${p.post_earnings_exp} · ` : ''}data is end-of-day
+      </div>
+    </div>
+  `;
+}
+
 function renderTrending() {
-  const rows = state.data.tickers.map(t => {
+  const rows = state.data.tickers.map((t, idx) => {
+    const key = `t-${idx}`;
+    const isExpanded = state.expandedKey === key;
     const earnPill = t.next_earnings
       ? `<div class="earnings-pill ${t.days_to_earnings <= 14 ? 'imminent' : ''}">${formatEarnings(t)}</div>`
       : `<div class="earnings-pill none">no earnings</div>`;
+
+    const expandedHTML = isExpanded ? renderPlayPanel(t) : '';
+
     return `
-      <div class="ticker-row">
-        <div class="rank">${t.rank}</div>
-        <div class="ticker-info">
-          <div class="ticker-line">
-            <span class="ticker-symbol">$${escapeHTML(t.ticker)}</span>
-            <span class="ticker-name">${escapeHTML(t.name)}</span>
+      <div class="ticker-row-wrapper ${isExpanded ? 'expanded' : ''}" data-key="${key}">
+        <div class="ticker-row">
+          <div class="rank">${t.rank}</div>
+          <div class="ticker-info">
+            <div class="ticker-line">
+              <span class="ticker-symbol">$${escapeHTML(t.ticker)}</span>
+              <span class="ticker-name">${escapeHTML(t.name)}</span>
+            </div>
+            <div class="ticker-meta">
+              <span class="${momentumClass(t.momentum_label)}">${momentumArrow(t.momentum_label)}</span>
+            </div>
           </div>
-          <div class="ticker-meta">
-            <span class="${momentumClass(t.momentum_label)}">${momentumArrow(t.momentum_label)}</span>
+          <div class="ticker-right">
+            <div class="mentions">${t.mentions}</div>
+            <div class="mentions-label">mentions</div>
+            ${earnPill}
           </div>
         </div>
-        <div class="ticker-right">
-          <div class="mentions">${t.mentions}</div>
-          <div class="mentions-label">mentions</div>
-          ${earnPill}
-        </div>
+        ${expandedHTML}
       </div>
     `;
   }).join('');
@@ -242,6 +350,31 @@ function renderCalendar() {
     else later.push(t);
   }
 
+  const eventHTML = (t) => {
+    const p = t.play;
+    const avg = avgAbsMove(p?.historical_moves);
+    const playLine = (p && (p.implied_move_pct || avg !== null)) ? `
+      <div class="agenda-event-play">
+        ${p.implied_move_pct ? `Implied: <span>±${p.implied_move_pct}%</span>` : ''}
+        ${avg !== null ? `Hist avg: <span>±${avg.toFixed(1)}%</span>` : ''}
+      </div>
+    ` : '';
+    return `
+      <div class="agenda-event">
+        <div class="agenda-event-line1">
+          <span class="agenda-event-ticker">$${escapeHTML(t.ticker)}</span>
+          <span class="agenda-event-rank">#${t.rank} on WSB</span>
+        </div>
+        <div class="agenda-event-name">${escapeHTML(t.name)}</div>
+        <div class="agenda-event-meta">
+          ${t.mentions} mentions ·
+          <span class="${momentumClass(t.momentum_label)}">${momentumArrow(t.momentum_label)}</span>
+        </div>
+        ${playLine}
+      </div>
+    `;
+  };
+
   const sectionHTML = (title, items) => {
     if (items.length === 0) return '';
     const byDate = {};
@@ -253,20 +386,7 @@ function renderCalendar() {
       const label = d.toLocaleDateString('en-US', {
         weekday: 'short', month: 'short', day: 'numeric'
       });
-      const events = tickers.map(t => `
-        <div class="agenda-event">
-          <div class="agenda-event-line1">
-            <span class="agenda-event-ticker">$${escapeHTML(t.ticker)}</span>
-            <span class="agenda-event-rank">#${t.rank} on WSB</span>
-          </div>
-          <div class="agenda-event-name">${escapeHTML(t.name)}</div>
-          <div class="agenda-event-meta">
-            ${t.mentions} mentions ·
-            <span class="${momentumClass(t.momentum_label)}">${momentumArrow(t.momentum_label)}</span>
-          </div>
-        </div>
-      `).join('');
-      return `<div class="agenda-day"><div class="agenda-date">${label}</div>${events}</div>`;
+      return `<div class="agenda-day"><div class="agenda-date">${label}</div>${tickers.map(eventHTML).join('')}</div>`;
     }).join('');
     return `<div class="agenda-section"><h2>${title}</h2>${days}</div>`;
   };
@@ -277,10 +397,21 @@ function renderCalendar() {
     sectionHTML('Later', later);
 }
 
+// Event delegation for expand/collapse
+$content.addEventListener('click', e => {
+  const wrapper = e.target.closest('.ticker-row-wrapper');
+  if (wrapper && state.view === 'trending') {
+    const key = wrapper.dataset.key;
+    state.expandedKey = state.expandedKey === key ? null : key;
+    render();
+  }
+});
+
 $tabs.forEach(btn => {
   btn.addEventListener('click', () => {
     $tabs.forEach(b => b.classList.toggle('active', b === btn));
     state.view = btn.dataset.view;
+    state.expandedKey = null;
     render();
   });
 });
