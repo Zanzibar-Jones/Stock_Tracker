@@ -64,6 +64,8 @@ def main():
             event.name = f"${ticker} Earnings — #{rank} WSB ({mentions} mentions, {momentum})"
             event.begin = earnings.isoformat()
             event.make_all_day()
+            event.uid = f"{ticker}-earnings-{earnings.isoformat()}@wsb-tracker"
+
             event.description = (
                 f"{name}\n"
                 f"WSB rank: #{rank}\n"
