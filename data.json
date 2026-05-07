@@ -1,184 +1,220 @@
 {
-  "generated_at": "2026-05-07T04:13:04.639659+00:00",
+  "generated_at": "2026-05-07T04:41:38.268530+00:00",
   "tickers": [
     {
       "rank": 1,
       "ticker": "AMD",
       "name": "AMD",
-      "mentions": 711,
+      "mentions": 693,
       "rank_change": 0,
       "momentum_label": "flat",
       "next_earnings": "2026-08-04",
       "days_to_earnings": 89,
+      "spot": 421.39,
       "play": {
         "spot": 421.39,
         "post_earnings_exp": "2026-08-21",
+        "days_post_earnings": 17,
+        "straddle_price": 118.2,
         "implied_move_pct": 28.05,
         "atm_iv_pct": 65.38,
-        "historical_moves": []
+        "historical_moves": [],
+        "verdict": null
       }
     },
     {
       "rank": 2,
       "ticker": "SPY",
       "name": "SPDR S&P 500 ETF Trust",
-      "mentions": 557,
+      "mentions": 558,
       "rank_change": 3,
       "momentum_label": "up 3",
       "next_earnings": null,
       "days_to_earnings": null,
+      "spot": 733.83,
       "play": null
     },
     {
       "rank": 3,
       "ticker": "MU",
       "name": "Micron Technology",
-      "mentions": 515,
+      "mentions": 505,
       "rank_change": -1,
       "momentum_label": "down 1",
       "next_earnings": "2026-06-24",
       "days_to_earnings": 48,
+      "spot": 666.59,
       "play": {
         "spot": 666.59,
         "post_earnings_exp": "2026-07-17",
+        "days_post_earnings": 23,
+        "straddle_price": 192.32,
         "implied_move_pct": 28.85,
         "atm_iv_pct": 81.65,
-        "historical_moves": []
+        "historical_moves": [],
+        "verdict": null
       }
     },
     {
       "rank": 4,
       "ticker": "SNDK",
       "name": "Sandisk",
-      "mentions": 372,
+      "mentions": 367,
       "rank_change": -1,
       "momentum_label": "down 1",
       "next_earnings": null,
       "days_to_earnings": null,
+      "spot": 1409.98,
       "play": null
     },
     {
       "rank": 5,
       "ticker": "NVDA",
       "name": "NVIDIA",
-      "mentions": 351,
+      "mentions": 349,
       "rank_change": -1,
       "momentum_label": "down 1",
       "next_earnings": "2026-05-20",
       "days_to_earnings": 13,
+      "spot": 207.83,
       "play": {
         "spot": 207.83,
         "post_earnings_exp": "2026-05-22",
+        "days_post_earnings": 2,
+        "straddle_price": 18.5,
         "implied_move_pct": 8.9,
         "atm_iv_pct": 52.81,
-        "historical_moves": []
+        "historical_moves": [],
+        "verdict": null
       }
     },
     {
       "rank": 6,
       "ticker": "ARM",
       "name": "Arm Holdings",
-      "mentions": 311,
+      "mentions": 309,
       "rank_change": 23,
       "momentum_label": "up 23",
       "next_earnings": null,
       "days_to_earnings": null,
+      "spot": 237.3,
       "play": null
     },
     {
       "rank": 7,
       "ticker": "MSFT",
       "name": "Microsoft",
-      "mentions": 275,
+      "mentions": 273,
       "rank_change": 0,
       "momentum_label": "flat",
       "next_earnings": "2026-07-29",
       "days_to_earnings": 83,
+      "spot": 413.96,
       "play": {
         "spot": 413.96,
         "post_earnings_exp": "2026-08-21",
+        "days_post_earnings": 23,
+        "straddle_price": 53.48,
         "implied_move_pct": 12.92,
         "atm_iv_pct": 30.35,
-        "historical_moves": []
+        "historical_moves": [],
+        "verdict": null
       }
     },
     {
       "rank": 8,
       "ticker": "ASTS",
       "name": "AST SpaceMobile",
-      "mentions": 161,
+      "mentions": 165,
       "rank_change": 2,
       "momentum_label": "up 2",
       "next_earnings": "2026-05-11",
       "days_to_earnings": 4,
+      "spot": 70.68,
       "play": {
         "spot": 70.68,
         "post_earnings_exp": "2026-05-15",
+        "days_post_earnings": 4,
+        "straddle_price": 11.65,
         "implied_move_pct": 16.48,
         "atm_iv_pct": 132.28,
-        "historical_moves": []
+        "historical_moves": [],
+        "verdict": null
       }
     },
     {
       "rank": 9,
       "ticker": "QQQ",
       "name": "Invesco QQQ ETF",
-      "mentions": 160,
+      "mentions": 158,
       "rank_change": 2,
       "momentum_label": "up 2",
       "next_earnings": null,
       "days_to_earnings": null,
+      "spot": 695.77,
       "play": null
     },
     {
       "rank": 10,
       "ticker": "INTC",
       "name": "Intel",
-      "mentions": 114,
+      "mentions": 110,
       "rank_change": -4,
       "momentum_label": "down 4",
       "next_earnings": "2026-07-23",
       "days_to_earnings": 77,
+      "spot": 113.01,
       "play": {
         "spot": 113.01,
         "post_earnings_exp": "2026-08-21",
+        "days_post_earnings": 29,
+        "straddle_price": 40.2,
         "implied_move_pct": 35.57,
         "atm_iv_pct": 82.24,
-        "historical_moves": []
+        "historical_moves": [],
+        "verdict": null
       }
     },
     {
       "rank": 11,
       "ticker": "SMCI",
       "name": "Supermicro",
-      "mentions": 98,
+      "mentions": 97,
       "rank_change": -3,
       "momentum_label": "down 3",
       "next_earnings": "2026-08-04",
       "days_to_earnings": 89,
+      "spot": 34.66,
       "play": {
         "spot": 34.66,
         "post_earnings_exp": "2026-08-21",
+        "days_post_earnings": 17,
+        "straddle_price": 11.52,
         "implied_move_pct": 33.25,
         "atm_iv_pct": 77.14,
-        "historical_moves": []
+        "historical_moves": [],
+        "verdict": null
       }
     },
     {
       "rank": 12,
       "ticker": "META",
       "name": "Meta Platforms (Facebook)",
-      "mentions": 83,
+      "mentions": 80,
       "rank_change": 1,
       "momentum_label": "up 1",
       "next_earnings": "2026-07-29",
       "days_to_earnings": 83,
+      "spot": 612.88,
       "play": {
         "spot": 612.88,
         "post_earnings_exp": "2026-08-21",
-        "implied_move_pct": 15.63,
-        "atm_iv_pct": 36.51,
-        "historical_moves": []
+        "days_post_earnings": 23,
+        "straddle_price": 95.85,
+        "implied_move_pct": 15.64,
+        "atm_iv_pct": 19.63,
+        "historical_moves": [],
+        "verdict": null
       }
     },
     {
@@ -190,29 +226,37 @@
       "momentum_label": "up 18",
       "next_earnings": "2026-05-13",
       "days_to_earnings": 6,
+      "spot": 195.09,
       "play": {
         "spot": 195.09,
         "post_earnings_exp": "2026-05-15",
+        "days_post_earnings": 2,
+        "straddle_price": 30.88,
         "implied_move_pct": 15.83,
         "atm_iv_pct": 126.55,
-        "historical_moves": []
+        "historical_moves": [],
+        "verdict": null
       }
     },
     {
       "rank": 14,
       "ticker": "DTE",
       "name": "DTE Energy",
-      "mentions": 76,
+      "mentions": 77,
       "rank_change": 5,
       "momentum_label": "up 5",
       "next_earnings": "2026-07-30",
       "days_to_earnings": 84,
+      "spot": 142.44,
       "play": {
         "spot": 142.44,
         "post_earnings_exp": "2026-10-16",
+        "days_post_earnings": 78,
+        "straddle_price": 17.65,
         "implied_move_pct": 12.39,
         "atm_iv_pct": 10.93,
-        "historical_moves": []
+        "historical_moves": [],
+        "verdict": null
       }
     },
     {
@@ -224,6 +268,7 @@
       "momentum_label": "up 127",
       "next_earnings": null,
       "days_to_earnings": null,
+      "spot": 52.57,
       "play": null
     },
     {
@@ -235,142 +280,175 @@
       "momentum_label": "up 5",
       "next_earnings": "2026-07-22",
       "days_to_earnings": 76,
+      "spot": 398.73,
       "play": {
         "spot": 398.73,
         "post_earnings_exp": "2026-08-21",
-        "implied_move_pct": 19.44,
-        "atm_iv_pct": 45.29,
-        "historical_moves": []
+        "days_post_earnings": 30,
+        "straddle_price": 77.2,
+        "implied_move_pct": 19.36,
+        "atm_iv_pct": 0.1,
+        "historical_moves": [],
+        "verdict": null
       }
     },
     {
       "rank": 17,
-      "ticker": "PLTR",
-      "name": "Palantir",
+      "ticker": "RDDT",
+      "name": "Reddit",
       "mentions": 59,
-      "rank_change": -8,
-      "momentum_label": "down 8",
-      "next_earnings": "2026-08-03",
-      "days_to_earnings": 88,
+      "rank_change": 1,
+      "momentum_label": "up 1",
+      "next_earnings": "2026-07-30",
+      "days_to_earnings": 84,
+      "spot": 166.56,
       "play": {
-        "spot": 133.79,
+        "spot": 166.56,
         "post_earnings_exp": "2026-08-21",
-        "implied_move_pct": 22.98,
-        "atm_iv_pct": 53.12,
-        "historical_moves": []
+        "days_post_earnings": 22,
+        "straddle_price": 47.75,
+        "implied_move_pct": 28.67,
+        "atm_iv_pct": 0.2,
+        "historical_moves": [],
+        "verdict": null
       }
     },
     {
       "rank": 18,
-      "ticker": "RDDT",
-      "name": "Reddit",
-      "mentions": 59,
-      "rank_change": 0,
-      "momentum_label": "flat",
-      "next_earnings": "2026-07-30",
-      "days_to_earnings": 84,
+      "ticker": "PLTR",
+      "name": "Palantir",
+      "mentions": 58,
+      "rank_change": -9,
+      "momentum_label": "down 9",
+      "next_earnings": "2026-08-03",
+      "days_to_earnings": 88,
+      "spot": 133.79,
       "play": {
-        "spot": 166.56,
+        "spot": 133.79,
         "post_earnings_exp": "2026-08-21",
-        "implied_move_pct": 29.3,
-        "atm_iv_pct": 68.51,
-        "historical_moves": []
+        "days_post_earnings": 18,
+        "straddle_price": 30.75,
+        "implied_move_pct": 22.98,
+        "atm_iv_pct": 53.12,
+        "historical_moves": [],
+        "verdict": null
       }
     },
     {
       "rank": 19,
       "ticker": "IREN",
       "name": "Iris Energy",
-      "mentions": 53,
+      "mentions": 55,
       "rank_change": 24,
       "momentum_label": "up 24",
       "next_earnings": "2026-05-07",
       "days_to_earnings": 0,
+      "spot": 60.98,
       "play": {
         "spot": 60.98,
         "post_earnings_exp": "2026-05-08",
+        "days_post_earnings": 1,
+        "straddle_price": 7.8,
         "implied_move_pct": 12.79,
         "atm_iv_pct": 231.15,
-        "historical_moves": []
+        "historical_moves": [],
+        "verdict": null
       }
     },
     {
       "rank": 20,
       "ticker": "SOUN",
       "name": "SoundHound AI",
-      "mentions": 50,
+      "mentions": 52,
       "rank_change": -5,
       "momentum_label": "down 5",
       "next_earnings": "2026-05-07",
       "days_to_earnings": 0,
+      "spot": 9.37,
       "play": {
         "spot": 9.37,
         "post_earnings_exp": "2026-05-08",
+        "days_post_earnings": 1,
+        "straddle_price": 1.44,
         "implied_move_pct": 15.37,
         "atm_iv_pct": 257.81,
-        "historical_moves": []
+        "historical_moves": [],
+        "verdict": null
       }
     },
     {
       "rank": 21,
       "ticker": "SOXL",
       "name": "Direxion Shares ETF Trust - Direxion Daily Semiconductor Bull 3X Share",
-      "mentions": 49,
+      "mentions": 50,
       "rank_change": -4,
       "momentum_label": "down 4",
       "next_earnings": null,
       "days_to_earnings": null,
+      "spot": 165.85,
       "play": null
     },
     {
       "rank": 22,
-      "ticker": "GOOGL",
-      "name": "Alphabet (Google)",
+      "ticker": "AM",
+      "name": "Antero Midstream",
       "mentions": 46,
-      "rank_change": 4,
-      "momentum_label": "up 4",
-      "next_earnings": "2026-07-23",
-      "days_to_earnings": 77,
+      "rank_change": 3,
+      "momentum_label": "up 3",
+      "next_earnings": "2026-07-29",
+      "days_to_earnings": 83,
+      "spot": 21.16,
       "play": {
-        "spot": 398.04,
-        "post_earnings_exp": "2026-08-21",
-        "implied_move_pct": 15.29,
-        "atm_iv_pct": 36.13,
-        "historical_moves": []
+        "spot": 21.16,
+        "post_earnings_exp": "2026-09-18",
+        "days_post_earnings": 51,
+        "straddle_price": 2.55,
+        "implied_move_pct": 12.05,
+        "atm_iv_pct": 26.89,
+        "historical_moves": [],
+        "verdict": null
       }
     },
     {
       "rank": 23,
-      "ticker": "AM",
-      "name": "Antero Midstream",
-      "mentions": 45,
-      "rank_change": 2,
-      "momentum_label": "up 2",
-      "next_earnings": "2026-07-29",
-      "days_to_earnings": 83,
+      "ticker": "MSTR",
+      "name": "MicroStrategy",
+      "mentions": 43,
+      "rank_change": 1,
+      "momentum_label": "up 1",
+      "next_earnings": "2026-07-30",
+      "days_to_earnings": 84,
+      "spot": 186.82,
       "play": {
-        "spot": 21.16,
-        "post_earnings_exp": "2026-09-18",
-        "implied_move_pct": 12.05,
-        "atm_iv_pct": 26.89,
-        "historical_moves": []
+        "spot": 186.82,
+        "post_earnings_exp": "2026-08-21",
+        "days_post_earnings": 22,
+        "straddle_price": 56.75,
+        "implied_move_pct": 30.38,
+        "atm_iv_pct": 71.08,
+        "historical_moves": [],
+        "verdict": null
       }
     },
     {
       "rank": 24,
-      "ticker": "MSTR",
-      "name": "MicroStrategy",
-      "mentions": 45,
-      "rank_change": 0,
-      "momentum_label": "flat",
-      "next_earnings": "2026-07-30",
-      "days_to_earnings": 84,
+      "ticker": "GOOGL",
+      "name": "Alphabet (Google)",
+      "mentions": 42,
+      "rank_change": 2,
+      "momentum_label": "up 2",
+      "next_earnings": "2026-07-23",
+      "days_to_earnings": 77,
+      "spot": 398.04,
       "play": {
-        "spot": 186.82,
+        "spot": 398.04,
         "post_earnings_exp": "2026-08-21",
-        "implied_move_pct": 30.38,
-        "atm_iv_pct": 71.08,
-        "historical_moves": []
+        "days_post_earnings": 29,
+        "straddle_price": 60.88,
+        "implied_move_pct": 15.29,
+        "atm_iv_pct": 36.13,
+        "historical_moves": [],
+        "verdict": null
       }
     },
     {
@@ -382,6 +460,7 @@
       "momentum_label": "up 8",
       "next_earnings": null,
       "days_to_earnings": null,
+      "spot": 133.95,
       "play": null
     }
   ]
