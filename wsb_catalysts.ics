@@ -1,0 +1,64 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260729
+DESCRIPTION:Microsoft\nWSB rank: #7\nMentions (24h): 279\nMomentum: flat\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$MSFT Earnings — #7 WSB (279 mentions\, flat)
+UID:MSFT-earnings-2026-07-29@wsb-tracker
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260723
+DESCRIPTION:Intel\nWSB rank: #10\nMentions (24h): 120\nMomentum: down 4\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$INTC Earnings — #10 WSB (120 mentions\, down 4)
+UID:INTC-earnings-2026-07-23@wsb-tracker
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260520
+DESCRIPTION:NVIDIA\nWSB rank: #5\nMentions (24h): 370\nMomentum: down 1\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$NVDA Earnings — #5 WSB (370 mentions\, down 1)
+UID:NVDA-earnings-2026-05-20@wsb-tracker
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260804
+DESCRIPTION:Supermicro\nWSB rank: #11\nMentions (24h): 96\nMomentum: down 2\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$SMCI Earnings — #11 WSB (96 mentions\, down 2)
+UID:SMCI-earnings-2026-08-04@wsb-tracker
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260511
+DESCRIPTION:AST SpaceMobile\nWSB rank: #9\nMentions (24h): 156\nMomentum: up 1\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$ASTS Earnings — #9 WSB (156 mentions\, up 1)
+UID:ASTS-earnings-2026-05-11@wsb-tracker
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260513
+DESCRIPTION:Nebius Group\nWSB rank: #13\nMentions (24h): 81\nMomentum: up 17\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$NBIS Earnings — #13 WSB (81 mentions\, up 17)
+UID:NBIS-earnings-2026-05-13@wsb-tracker
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260804
+DESCRIPTION:AMD\nWSB rank: #1\nMentions (24h): 748\nMomentum: flat\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$AMD Earnings — #1 WSB (748 mentions\, flat)
+UID:AMD-earnings-2026-08-04@wsb-tracker
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260730
+DESCRIPTION:DTE Energy\nWSB rank: #15\nMentions (24h): 72\nMomentum: up 2\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$DTE Earnings — #15 WSB (72 mentions\, up 2)
+UID:DTE-earnings-2026-07-30@wsb-tracker
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260624
+DESCRIPTION:Micron Technology\nWSB rank: #3\nMentions (24h): 530\nMomentum: down 1\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$MU Earnings — #3 WSB (530 mentions\, down 1)
+UID:MU-earnings-2026-06-24@wsb-tracker
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260729
+DESCRIPTION:Meta Platforms (Facebook)\nWSB rank: #12\nMentions (24h): 85\nMomentum: up 2\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$META Earnings — #12 WSB (85 mentions\, up 2)
+UID:META-earnings-2026-07-29@wsb-tracker
+END:VEVENT
+END:VCALENDAR
