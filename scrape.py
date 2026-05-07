@@ -41,8 +41,7 @@ def _midprice(row):
     ask = row.get("ask", 0) or 0
     if bid > 0 and ask > 0:
         return (bid + ask) / 2
-    last = row.get("lastPrice", 0) or 0
-    return last
+    return row.get("lastPrice", 0) or 0
 
 
 def get_spot(t):
@@ -112,7 +111,6 @@ def get_options_play_data(ticker_symbol, earnings_date):
             except Exception as e:
                 print(f"  option_chain failed for {ticker_symbol}: {e}", file=sys.stderr)
 
-        # Historical earnings reactions
         try:
             ed_df = t.earnings_dates
             if ed_df is not None and not ed_df.empty:
@@ -144,6 +142,82 @@ def get_options_play_data(ticker_symbol, earnings_date):
     return out
 
 
+def compute_verdict(play, rank_change):
+    """Return verdict dict comparing implied move to historical avg.
+    Returns None if there isn't enough data to score."""
+    if not play or not play.get("implied_move_pct"):
+        return None
+    moves = play.get("historical_moves") or []
+    if len(moves) < 2:
+        return None
+
+    im = play["implied_move_pct"]
+    avg_hist = sum(abs(m["move_pct"]) for m in moves) / len(moves)
+    if avg_hist <= 0:
+        return None
+
+    ratio = im / avg_hist
+
+    rc = rank_change if rank_change is not None else 0
+    if rc >= 15:
+        direction = "bullish"
+    elif rc <= -15:
+        direction = "bearish"
+    else:
+        direction = "neutral"
+
+    confidence = "high" if len(moves) >= 4 else ("medium" if len(moves) >= 3 else "low")
+
+    if ratio > 1.20:
+        signal = "sell_premium"
+        label = "Premium expensive"
+        diff = round((ratio - 1) * 100)
+        reason = (
+            f"Implied move (±{im}%) is {diff}% above historical avg "
+            f"(±{avg_hist:.1f}%, last {len(moves)}). Market pricing more vol "
+            f"than the stock has typically delivered on earnings."
+        )
+        if direction == "bullish":
+            suggested = "Put credit spread (sell premium, bullish bias)"
+        elif direction == "bearish":
+            suggested = "Call credit spread (sell premium, bearish bias)"
+        else:
+            suggested = "Iron condor (sell premium, neutral)"
+    elif ratio < 0.80:
+        signal = "buy_premium"
+        label = "Premium cheap"
+        diff = round((1 - ratio) * 100)
+        reason = (
+            f"Implied move (±{im}%) is {diff}% below historical avg "
+            f"(±{avg_hist:.1f}%, last {len(moves)}). Market under-pricing "
+            f"typical earnings volatility."
+        )
+        if direction == "bullish":
+            suggested = "Long calls (buy premium, bullish bias)"
+        elif direction == "bearish":
+            suggested = "Long puts (buy premium, bearish bias)"
+        else:
+            suggested = "Long straddle (buy premium, neutral)"
+    else:
+        signal = "neutral"
+        label = "Fairly priced"
+        diff = round((ratio - 1) * 100)
+        reason = (
+            f"Implied move (±{im}%) within {abs(diff)}% of historical avg "
+            f"(±{avg_hist:.1f}%, last {len(moves)}). No clear edge from this metric alone."
+        )
+        suggested = "No edge from this signal — trade only on direction conviction"
+
+    return {
+        "signal": signal,
+        "label": label,
+        "reason": reason,
+        "suggested": suggested,
+        "confidence": confidence,
+        "ratio": round(ratio, 2),
+    }
+
+
 def main():
     results = fetch_trending()
     if not results:
@@ -154,8 +228,8 @@ def main():
     tickers_data = []
     today = date.today()
 
-    print(f"{'#':>3}. {'TICKER':<7} {'EARN':<10} {'IM%':>7} {'AVG HIST%':>10}")
-    print("-" * 50)
+    print(f"{'#':>3}. {'TICKER':<7} {'EARN':<10} {'IM%':>7} {'HIST%':>7}  VERDICT")
+    print("-" * 60)
 
     for stock in results[:TOP_N]:
         rank = int(stock.get("rank", 0))
@@ -175,16 +249,22 @@ def main():
         days_to_earnings = (earnings - today).days if earnings else None
 
         play_data = get_options_play_data(ticker, earnings) if earnings else None
+        verdict = compute_verdict(play_data, change) if play_data else None
+        if play_data and verdict:
+            play_data["verdict"] = verdict
+        elif play_data:
+            play_data["verdict"] = None
 
         if play_data:
-            im = play_data["implied_move_pct"]
-            moves = play_data["historical_moves"]
+            im = play_data.get("implied_move_pct")
+            moves = play_data.get("historical_moves") or []
             avg_hist = round(sum(abs(m["move_pct"]) for m in moves) / len(moves), 2) if moves else None
+            v_label = verdict["label"] if verdict else "—"
             print(f"{rank:>3}. {ticker:<7} {earnings.isoformat():<10} "
                   f"{(str(im)+'%') if im else '—':>7} "
-                  f"{(str(avg_hist)+'%') if avg_hist else '—':>10}")
+                  f"{(str(avg_hist)+'%') if avg_hist else '—':>7}  {v_label}")
         else:
-            print(f"{rank:>3}. {ticker:<7} {'—':<10} {'—':>7} {'—':>10}")
+            print(f"{rank:>3}. {ticker:<7} {'—':<10} {'—':>7} {'—':>7}  —")
 
         tickers_data.append({
             "rank": rank,
@@ -217,6 +297,11 @@ def main():
                 if hm:
                     avg = sum(abs(m["move_pct"]) for m in hm) / len(hm)
                     desc_lines.append(f"Historical avg: ±{avg:.1f}% (last {len(hm)})")
+            if verdict:
+                desc_lines.append("")
+                desc_lines.append(f"VERDICT: {verdict['label']}")
+                desc_lines.append(verdict["reason"])
+                desc_lines.append(f"Suggested: {verdict['suggested']}")
             event.description = "\n".join(desc_lines) + "\n\nhttps://apewisdom.io/wallstreetbets/"
             cal.events.add(event)
 
