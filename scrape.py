@@ -1,20 +1,35 @@
 import urllib.request
 import json
+import sys
 
 URL = "https://apewisdom.io/api/v1.0/filter/wallstreetbets"
 
 def main():
-    with urllib.request.urlopen(URL) as response:
-        data = json.loads(response.read())
+    req = urllib.request.Request(
+        URL,
+        headers={"User-Agent": "wsb-tracker/0.1 (personal project)"}
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=30) as response:
+            data = json.loads(response.read())
+    except Exception as e:
+        print(f"ERROR fetching {URL}: {e}", file=sys.stderr)
+        raise
+
+    results = data.get("results", [])
+    if not results:
+        print("No results. Raw response:")
+        print(json.dumps(data, indent=2)[:500])
+        sys.exit(1)
 
     print("Top 20 trending tickers on r/wallstreetbets")
     print("=" * 60)
 
-    for stock in data["results"][:20]:
-        rank = int(stock["rank"])
-        ticker = stock["ticker"]
-        name = stock["name"]
-        mentions = int(stock["mentions"])
+    for stock in results[:20]:
+        rank = int(stock.get("rank", 0))
+        ticker = stock.get("ticker", "?")
+        name = stock.get("name", "?")
+        mentions = int(stock.get("mentions", 0))
 
         old = stock.get("rank_24h_ago")
         if old and old != "0":
