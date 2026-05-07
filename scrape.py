@@ -2,12 +2,14 @@ import urllib.request
 import json
 import sys
 import html
-from datetime import datetime, date
+from datetime import datetime, date, timezone
 import yfinance as yf
 from ics import Calendar, Event
 
 URL = "https://apewisdom.io/api/v1.0/filter/wallstreetbets"
 ICS_OUTPUT = "wsb_catalysts.ics"
+JSON_OUTPUT = "data.json"
+TOP_N = 25  # how many trending tickers to track
 
 def fetch_trending():
     req = urllib.request.Request(
@@ -37,11 +39,13 @@ def main():
         sys.exit(1)
 
     cal = Calendar()
+    tickers_data = []
+    today = date.today()
 
     print(f"{'#':>3}. {'TICKER':<7} {'NAME':<28} {'MENTIONS':>9}  {'MOMENTUM':<10} {'EARNINGS':<12}")
     print("-" * 75)
 
-    for stock in results[:15]:
+    for stock in results[:TOP_N]:
         rank = int(stock.get("rank", 0))
         ticker = stock.get("ticker", "?")
         name = html.unescape(stock.get("name", "?"))
@@ -50,27 +54,39 @@ def main():
         old = stock.get("rank_24h_ago")
         if old and old != "0":
             change = int(old) - rank
-            momentum = f"up {change}" if change > 0 else (f"down {abs(change)}" if change < 0 else "flat")
+            momentum_label = f"up {change}" if change > 0 else (f"down {abs(change)}" if change < 0 else "flat")
         else:
-            momentum = "NEW"
+            change = None
+            momentum_label = "NEW"
 
         earnings = get_next_earnings(ticker)
         earnings_str = earnings.strftime("%Y-%m-%d") if earnings else "—"
+        days_to_earnings = (earnings - today).days if earnings else None
 
-        print(f"{rank:>3}. {ticker:<7} {name[:28]:<28} {mentions:>9}  {momentum:<10} {earnings_str:<12}")
+        print(f"{rank:>3}. {ticker:<7} {name[:28]:<28} {mentions:>9}  {momentum_label:<10} {earnings_str:<12}")
+
+        tickers_data.append({
+            "rank": rank,
+            "ticker": ticker,
+            "name": name,
+            "mentions": mentions,
+            "rank_change": change,
+            "momentum_label": momentum_label,
+            "next_earnings": earnings.isoformat() if earnings else None,
+            "days_to_earnings": days_to_earnings,
+        })
 
         if earnings:
             event = Event()
-            event.name = f"${ticker} Earnings — #{rank} WSB ({mentions} mentions, {momentum})"
+            event.name = f"${ticker} Earnings — #{rank} WSB ({mentions} mentions, {momentum_label})"
             event.begin = earnings.isoformat()
             event.make_all_day()
             event.uid = f"{ticker}-earnings-{earnings.isoformat()}@wsb-tracker"
-
             event.description = (
                 f"{name}\n"
                 f"WSB rank: #{rank}\n"
                 f"Mentions (24h): {mentions}\n"
-                f"Momentum: {momentum}\n\n"
+                f"Momentum: {momentum_label}\n\n"
                 f"https://apewisdom.io/wallstreetbets/"
             )
             cal.events.add(event)
@@ -78,7 +94,15 @@ def main():
     with open(ICS_OUTPUT, "w") as f:
         f.write(str(cal))
 
+    output = {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "tickers": tickers_data,
+    }
+    with open(JSON_OUTPUT, "w") as f:
+        json.dump(output, f, indent=2)
+
     print(f"\nWrote {len(cal.events)} events to {ICS_OUTPUT}")
+    print(f"Wrote {len(tickers_data)} tickers to {JSON_OUTPUT}")
 
 if __name__ == "__main__":
     main()

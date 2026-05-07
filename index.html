@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="WSB Catalysts">
+<meta name="theme-color" content="#0a0a0a">
+<title>WSB Catalysts</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+
+  :root {
+    --bg: #0a0a0a;
+    --surface: #161616;
+    --surface-2: #222;
+    --border: #2a2a2a;
+    --text: #f0f0f0;
+    --text-2: #888;
+    --text-3: #555;
+    --green: #2ecc71;
+    --red: #e74c3c;
+    --amber: #f39c12;
+    --blue: #3498db;
+    --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+  }
+
+  header { padding: 14px 20px 6px; }
+  header h1 { font-size: 22px; font-weight: 700; letter-spacing: -0.02em; }
+  .updated { color: var(--text-2); font-size: 12px; font-family: var(--mono); margin-top: 2px; }
+
+  nav.tabs { display: flex; padding: 0 12px; }
+  nav.tabs button {
+    flex: 1; background: transparent; border: none;
+    color: var(--text-2); font-size: 15px; font-weight: 600;
+    padding: 12px 8px; border-bottom: 2px solid transparent;
+    cursor: pointer; font-family: inherit;
+  }
+  nav.tabs button.active { color: var(--text); border-bottom-color: var(--blue); }
+
+  main { padding: 8px 0 40px; }
+
+  .ticker-row {
+    display: grid;
+    grid-template-columns: 28px 1fr auto;
+    gap: 12px;
+    align-items: center;
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--border);
+  }
+  .rank { color: var(--text-3); font-family: var(--mono); font-size: 13px; text-align: right; }
+  .ticker-info { min-width: 0; }
+  .ticker-line { display: flex; align-items: baseline; gap: 8px; }
+  .ticker-symbol { font-family: var(--mono); font-weight: 700; font-size: 16px; }
+  .ticker-name {
+    color: var(--text-2); font-size: 13px;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .ticker-meta {
+    display: flex; gap: 12px; margin-top: 4px;
+    font-size: 12px; color: var(--text-2); font-family: var(--mono);
+  }
+  .momentum-up { color: var(--green); }
+  .momentum-down { color: var(--red); }
+  .momentum-new { color: var(--amber); }
+  .momentum-flat { color: var(--text-3); }
+
+  .ticker-right { text-align: right; font-family: var(--mono); }
+  .mentions { font-size: 16px; font-weight: 600; }
+  .mentions-label {
+    font-size: 10px; color: var(--text-3);
+    text-transform: uppercase; letter-spacing: 0.05em;
+  }
+  .earnings-pill {
+    display: inline-block; margin-top: 4px; padding: 2px 8px;
+    background: var(--surface-2); border-radius: 10px;
+    font-size: 11px; color: var(--text-2); font-family: var(--mono);
+  }
+  .earnings-pill.imminent { background: rgba(243, 156, 18, 0.18); color: var(--amber); }
+  .earnings-pill.none { opacity: 0.4; }
+
+  .agenda-section { padding: 20px 20px 8px; }
+  .agenda-section h2 {
+    font-size: 11px; font-weight: 700; color: var(--text-3);
+    text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 12px;
+  }
+  .agenda-day { margin-bottom: 16px; }
+  .agenda-date { font-size: 13px; color: var(--text-2); font-family: var(--mono); margin-bottom: 6px; }
+  .agenda-event {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin-bottom: 6px;
+  }
+  .agenda-event-line1 { display: flex; justify-content: space-between; align-items: baseline; }
+  .agenda-event-ticker { font-family: var(--mono); font-weight: 700; font-size: 16px; }
+  .agenda-event-rank { font-size: 12px; color: var(--text-3); font-family: var(--mono); }
+  .agenda-event-name { color: var(--text-2); font-size: 13px; margin-top: 2px; }
+  .agenda-event-meta {
+    font-size: 12px; color: var(--text-2); font-family: var(--mono); margin-top: 6px;
+  }
+
+  .state { text-align: center; padding: 60px 20px; color: var(--text-2); }
+  .state.error { color: var(--red); }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <header>
+    <h1>WSB Catalysts</h1>
+    <div class="updated">Updated <span id="updated">—</span></div>
+  </header>
+  <nav class="tabs">
+    <button data-view="trending" class="active">Trending</button>
+    <button data-view="calendar">Calendar</button>
+  </nav>
+</div>
+
+<main id="content">
+  <div class="state">Loading…</div>
+</main>
+
+<script>
+const $content = document.getElementById('content');
+const $updated = document.getElementById('updated');
+const $tabs = document.querySelectorAll('nav.tabs button');
+
+let state = { data: null, view: 'trending' };
+
+async function load() {
+  try {
+    const r = await fetch('./data.json?t=' + Date.now());
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    state.data = await r.json();
+    render();
+  } catch (e) {
+    $content.innerHTML = `<div class="state error">Could not load data: ${e.message}</div>`;
+  }
+}
+
+function render() {
+  if (!state.data) return;
+  const dt = new Date(state.data.generated_at);
+  $updated.textContent = dt.toLocaleString('en-US', {
+    month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit'
+  });
+  if (state.view === 'trending') renderTrending();
+  else renderCalendar();
+}
+
+function momentumClass(label) {
+  if (label.startsWith('up')) return 'momentum-up';
+  if (label.startsWith('down')) return 'momentum-down';
+  if (label === 'NEW') return 'momentum-new';
+  return 'momentum-flat';
+}
+function momentumArrow(label) {
+  if (label.startsWith('up')) return '↑ ' + label.slice(3);
+  if (label.startsWith('down')) return '↓ ' + label.slice(5);
+  if (label === 'NEW') return '★ NEW';
+  return '–';
+}
+
+function escapeHTML(s) {
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function formatEarnings(t) {
+  if (!t.next_earnings) return 'no earnings';
+  const d = new Date(t.next_earnings + 'T00:00:00');
+  const dStr = d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+  const days = t.days_to_earnings;
+  if (days === 0) return 'Earnings TODAY';
+  if (days === 1) return 'Earnings tomorrow';
+  return `Earnings ${dStr} · ${days}d`;
+}
+
+function renderTrending() {
+  const rows = state.data.tickers.map(t => {
+    const earnPill = t.next_earnings
+      ? `<div class="earnings-pill ${t.days_to_earnings <= 14 ? 'imminent' : ''}">${formatEarnings(t)}</div>`
+      : `<div class="earnings-pill none">no earnings</div>`;
+    return `
+      <div class="ticker-row">
+        <div class="rank">${t.rank}</div>
+        <div class="ticker-info">
+          <div class="ticker-line">
+            <span class="ticker-symbol">$${escapeHTML(t.ticker)}</span>
+            <span class="ticker-name">${escapeHTML(t.name)}</span>
+          </div>
+          <div class="ticker-meta">
+            <span class="${momentumClass(t.momentum_label)}">${momentumArrow(t.momentum_label)}</span>
+          </div>
+        </div>
+        <div class="ticker-right">
+          <div class="mentions">${t.mentions}</div>
+          <div class="mentions-label">mentions</div>
+          ${earnPill}
+        </div>
+      </div>
+    `;
+  }).join('');
+  $content.innerHTML = rows;
+}
+
+function renderCalendar() {
+  const withEarnings = state.data.tickers
+    .filter(t => t.next_earnings)
+    .sort((a, b) => a.next_earnings.localeCompare(b.next_earnings));
+
+  if (withEarnings.length === 0) {
+    $content.innerHTML = '<div class="state">No upcoming catalysts</div>';
+    return;
+  }
+
+  const week = [], month = [], later = [];
+  for (const t of withEarnings) {
+    const d = t.days_to_earnings;
+    if (d <= 7) week.push(t);
+    else if (d <= 30) month.push(t);
+    else later.push(t);
+  }
+
+  const sectionHTML = (title, items) => {
+    if (items.length === 0) return '';
+    const byDate = {};
+    for (const t of items) {
+      (byDate[t.next_earnings] = byDate[t.next_earnings] || []).push(t);
+    }
+    const days = Object.entries(byDate).map(([dateStr, tickers]) => {
+      const d = new Date(dateStr + 'T00:00:00');
+      const label = d.toLocaleDateString('en-US', {
+        weekday: 'short', month: 'short', day: 'numeric'
+      });
+      const events = tickers.map(t => `
+        <div class="agenda-event">
+          <div class="agenda-event-line1">
+            <span class="agenda-event-ticker">$${escapeHTML(t.ticker)}</span>
+            <span class="agenda-event-rank">#${t.rank} on WSB</span>
+          </div>
+          <div class="agenda-event-name">${escapeHTML(t.name)}</div>
+          <div class="agenda-event-meta">
+            ${t.mentions} mentions ·
+            <span class="${momentumClass(t.momentum_label)}">${momentumArrow(t.momentum_label)}</span>
+          </div>
+        </div>
+      `).join('');
+      return `<div class="agenda-day"><div class="agenda-date">${label}</div>${events}</div>`;
+    }).join('');
+    return `<div class="agenda-section"><h2>${title}</h2>${days}</div>`;
+  };
+
+  $content.innerHTML =
+    sectionHTML('This week', week) +
+    sectionHTML('Next 30 days', month) +
+    sectionHTML('Later', later);
+}
+
+$tabs.forEach(btn => {
+  btn.addEventListener('click', () => {
+    $tabs.forEach(b => b.classList.toggle('active', b === btn));
+    state.view = btn.dataset.view;
+    render();
+  });
+});
+
+load();
+</script>
+
+</body>
+</html>
