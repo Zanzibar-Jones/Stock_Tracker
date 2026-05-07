@@ -13,3 +13,7 @@ jobs:
           python-version: '3.12'
       - run: pip install -r requirements.txt
       - run: python scrape.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: wsb-catalysts-ics
+          path: wsb_catalysts.ics
