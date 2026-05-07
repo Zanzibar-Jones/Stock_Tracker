@@ -1,0 +1,255 @@
+{
+  "generated_at": "2026-05-07T04:00:00.441641+00:00",
+  "tickers": [
+    {
+      "rank": 1,
+      "ticker": "AMD",
+      "name": "AMD",
+      "mentions": 713,
+      "rank_change": 0,
+      "momentum_label": "flat",
+      "next_earnings": "2026-08-04",
+      "days_to_earnings": 89
+    },
+    {
+      "rank": 2,
+      "ticker": "SPY",
+      "name": "SPDR S&P 500 ETF Trust",
+      "mentions": 554,
+      "rank_change": 3,
+      "momentum_label": "up 3",
+      "next_earnings": null,
+      "days_to_earnings": null
+    },
+    {
+      "rank": 3,
+      "ticker": "MU",
+      "name": "Micron Technology",
+      "mentions": 518,
+      "rank_change": -1,
+      "momentum_label": "down 1",
+      "next_earnings": "2026-06-24",
+      "days_to_earnings": 48
+    },
+    {
+      "rank": 4,
+      "ticker": "SNDK",
+      "name": "Sandisk",
+      "mentions": 378,
+      "rank_change": -1,
+      "momentum_label": "down 1",
+      "next_earnings": null,
+      "days_to_earnings": null
+    },
+    {
+      "rank": 5,
+      "ticker": "NVDA",
+      "name": "NVIDIA",
+      "mentions": 351,
+      "rank_change": -1,
+      "momentum_label": "down 1",
+      "next_earnings": "2026-05-20",
+      "days_to_earnings": 13
+    },
+    {
+      "rank": 6,
+      "ticker": "ARM",
+      "name": "Arm Holdings",
+      "mentions": 311,
+      "rank_change": 24,
+      "momentum_label": "up 24",
+      "next_earnings": null,
+      "days_to_earnings": null
+    },
+    {
+      "rank": 7,
+      "ticker": "MSFT",
+      "name": "Microsoft",
+      "mentions": 275,
+      "rank_change": 0,
+      "momentum_label": "flat",
+      "next_earnings": "2026-07-29",
+      "days_to_earnings": 83
+    },
+    {
+      "rank": 8,
+      "ticker": "QQQ",
+      "name": "Invesco QQQ ETF",
+      "mentions": 160,
+      "rank_change": 2,
+      "momentum_label": "up 2",
+      "next_earnings": null,
+      "days_to_earnings": null
+    },
+    {
+      "rank": 9,
+      "ticker": "ASTS",
+      "name": "AST SpaceMobile",
+      "mentions": 160,
+      "rank_change": 2,
+      "momentum_label": "up 2",
+      "next_earnings": "2026-05-11",
+      "days_to_earnings": 4
+    },
+    {
+      "rank": 10,
+      "ticker": "INTC",
+      "name": "Intel",
+      "mentions": 114,
+      "rank_change": -4,
+      "momentum_label": "down 4",
+      "next_earnings": "2026-07-23",
+      "days_to_earnings": 77
+    },
+    {
+      "rank": 11,
+      "ticker": "SMCI",
+      "name": "Supermicro",
+      "mentions": 98,
+      "rank_change": -3,
+      "momentum_label": "down 3",
+      "next_earnings": "2026-08-04",
+      "days_to_earnings": 89
+    },
+    {
+      "rank": 12,
+      "ticker": "META",
+      "name": "Meta Platforms (Facebook)",
+      "mentions": 84,
+      "rank_change": 1,
+      "momentum_label": "up 1",
+      "next_earnings": "2026-07-29",
+      "days_to_earnings": 83
+    },
+    {
+      "rank": 13,
+      "ticker": "NBIS",
+      "name": "Nebius Group",
+      "mentions": 80,
+      "rank_change": 18,
+      "momentum_label": "up 18",
+      "next_earnings": "2026-05-13",
+      "days_to_earnings": 6
+    },
+    {
+      "rank": 14,
+      "ticker": "DTE",
+      "name": "DTE Energy",
+      "mentions": 76,
+      "rank_change": 3,
+      "momentum_label": "up 3",
+      "next_earnings": "2026-07-30",
+      "days_to_earnings": 84
+    },
+    {
+      "rank": 15,
+      "ticker": "IONQ",
+      "name": "IonQ",
+      "mentions": 75,
+      "rank_change": 96,
+      "momentum_label": "up 96",
+      "next_earnings": null,
+      "days_to_earnings": null
+    },
+    {
+      "rank": 16,
+      "ticker": "TSLA",
+      "name": "Tesla",
+      "mentions": 70,
+      "rank_change": 5,
+      "momentum_label": "up 5",
+      "next_earnings": "2026-07-22",
+      "days_to_earnings": 76
+    },
+    {
+      "rank": 17,
+      "ticker": "PLTR",
+      "name": "Palantir",
+      "mentions": 59,
+      "rank_change": -8,
+      "momentum_label": "down 8",
+      "next_earnings": "2026-08-03",
+      "days_to_earnings": 88
+    },
+    {
+      "rank": 18,
+      "ticker": "RDDT",
+      "name": "Reddit",
+      "mentions": 59,
+      "rank_change": 0,
+      "momentum_label": "flat",
+      "next_earnings": "2026-07-30",
+      "days_to_earnings": 84
+    },
+    {
+      "rank": 19,
+      "ticker": "IREN",
+      "name": "Iris Energy",
+      "mentions": 53,
+      "rank_change": 27,
+      "momentum_label": "up 27",
+      "next_earnings": "2026-05-07",
+      "days_to_earnings": 0
+    },
+    {
+      "rank": 20,
+      "ticker": "SOXL",
+      "name": "Direxion Shares ETF Trust - Direxion Daily Semiconductor Bull 3X Share",
+      "mentions": 49,
+      "rank_change": -1,
+      "momentum_label": "down 1",
+      "next_earnings": null,
+      "days_to_earnings": null
+    },
+    {
+      "rank": 21,
+      "ticker": "SOUN",
+      "name": "SoundHound AI",
+      "mentions": 49,
+      "rank_change": -6,
+      "momentum_label": "down 6",
+      "next_earnings": "2026-05-07",
+      "days_to_earnings": 0
+    },
+    {
+      "rank": 22,
+      "ticker": "MSTR",
+      "name": "MicroStrategy",
+      "mentions": 47,
+      "rank_change": 2,
+      "momentum_label": "up 2",
+      "next_earnings": "2026-07-30",
+      "days_to_earnings": 84
+    },
+    {
+      "rank": 23,
+      "ticker": "GOOGL",
+      "name": "Alphabet (Google)",
+      "mentions": 46,
+      "rank_change": 3,
+      "momentum_label": "up 3",
+      "next_earnings": "2026-07-23",
+      "days_to_earnings": 77
+    },
+    {
+      "rank": 24,
+      "ticker": "AM",
+      "name": "Antero Midstream",
+      "mentions": 44,
+      "rank_change": 1,
+      "momentum_label": "up 1",
+      "next_earnings": "2026-07-29",
+      "days_to_earnings": 83
+    },
+    {
+      "rank": 25,
+      "ticker": "USO",
+      "name": "United States Commodity Funds LLC - United States Oil Fund",
+      "mentions": 41,
+      "rank_change": 9,
+      "momentum_label": "up 9",
+      "next_earnings": null,
+      "days_to_earnings": null
+    }
+  ]
+}
