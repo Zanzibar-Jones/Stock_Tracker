@@ -3,110 +3,110 @@ VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260826
-DESCRIPTION:NVIDIA\nWSB rank: #6\nMentions (24h): 151\nMomentum: down 1\nImplied move: ±15.37%\nATM straddle: $30.26 (exp 2026-09-18)\n\nhttps://apewisdom.io/wallstreetbets/
-SUMMARY:$NVDA Earnings — #6 WSB (151 mentions\, down 1)
+DESCRIPTION:NVIDIA\nWSB rank: #3\nMentions (24h): 264\nMomentum: up 2\nImplied move: ±15.78%\nATM straddle: $31.87 (exp 2026-09-18)\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$NVDA Earnings — #3 WSB (264 mentions\, up 2)
 UID:NVDA-earnings-2026-08-26@wsb-tracker
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260729
-DESCRIPTION:Microsoft\nWSB rank: #3\nMentions (24h): 203\nMomentum: flat\nImplied move: ±9.09%\nATM straddle: $35.35 (exp 2026-07-31)\n\nhttps://apewisdom.io/wallstreetbets/
-SUMMARY:$MSFT Earnings — #3 WSB (203 mentions\, flat)
+DESCRIPTION:Microsoft\nWSB rank: #4\nMentions (24h): 185\nMomentum: down 1\nImplied move: ±8.92%\nATM straddle: $33.76 (exp 2026-07-31)\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$MSFT Earnings — #4 WSB (185 mentions\, down 1)
 UID:MSFT-earnings-2026-07-29@wsb-tracker
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260722
+DESCRIPTION:Alphabet (Google)\nWSB rank: #20\nMentions (24h): 25\nMomentum: up 4\nImplied move: ±6.63%\nATM straddle: $23.47 (exp 2026-07-24)\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$GOOG Earnings — #20 WSB (25 mentions\, up 4)
+UID:GOOG-earnings-2026-07-22@wsb-tracker
+END:VEVENT
+BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260723
-DESCRIPTION:Intel\nWSB rank: #22\nMentions (24h): 23\nMomentum: up 13\nImplied move: ±18.55%\nATM straddle: $20.48 (exp 2026-07-24)\n\nhttps://apewisdom.io/wallstreetbets/
-SUMMARY:$INTC Earnings — #22 WSB (23 mentions\, up 13)
+DESCRIPTION:Intel\nWSB rank: #22\nMentions (24h): 22\nMomentum: flat\nImplied move: ±18.32%\nATM straddle: $21.25 (exp 2026-07-24)\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$INTC Earnings — #22 WSB (22 mentions\, flat)
 UID:INTC-earnings-2026-07-23@wsb-tracker
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260824
-DESCRIPTION:Sandisk\nWSB rank: #4\nMentions (24h): 195\nMomentum: flat\nImplied move: ±45.06%\nATM straddle: $728.95 (exp 2026-09-18)\n\nhttps://apewisdom.io/wallstreetbets/
-SUMMARY:$SNDK Earnings — #4 WSB (195 mentions\, flat)
+DESCRIPTION:Sandisk\nWSB rank: #5\nMentions (24h): 138\nMomentum: down 1\nImplied move: ±41.14%\nATM straddle: $742.57 (exp 2026-09-18)\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$SNDK Earnings — #5 WSB (138 mentions\, down 1)
 UID:SNDK-earnings-2026-08-24@wsb-tracker
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260730
-DESCRIPTION:Reddit\nWSB rank: #25\nMentions (24h): 21\nMomentum: down 10\nImplied move: ±17.5%\nATM straddle: $34.9 (exp 2026-07-31)\n\nhttps://apewisdom.io/wallstreetbets/
-SUMMARY:$RDDT Earnings — #25 WSB (21 mentions\, down 10)
-UID:RDDT-earnings-2026-07-30@wsb-tracker
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260827
-DESCRIPTION:Marvell Technology Group\nWSB rank: #16\nMentions (24h): 35\nMomentum: up 14\nImplied move: ±34.97%\nATM straddle: $80.68 (exp 2026-09-18)\n\nhttps://apewisdom.io/wallstreetbets/
-SUMMARY:$MRVL Earnings — #16 WSB (35 mentions\, up 14)
-UID:MRVL-earnings-2026-08-27@wsb-tracker
+DTSTART;VALUE=DATE:20260828
+DESCRIPTION:Alibaba\nWSB rank: #24\nMentions (24h): 21\nMomentum: up 13\nImplied move: ±16.78%\nATM straddle: $18.53 (exp 2026-09-18)\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$BABA Earnings — #24 WSB (21 mentions\, up 13)
+UID:BABA-earnings-2026-08-28@wsb-tracker
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260722
-DESCRIPTION:Tesla\nWSB rank: #12\nMentions (24h): 55\nMomentum: down 5\nImplied move: ±9.16%\nATM straddle: $36.9 (exp 2026-07-24)\n\nhttps://apewisdom.io/wallstreetbets/
-SUMMARY:$TSLA Earnings — #12 WSB (55 mentions\, down 5)
+DESCRIPTION:Tesla\nWSB rank: #13\nMentions (24h): 40\nMomentum: down 1\nImplied move: ±8.81%\nATM straddle: $34.79 (exp 2026-07-24)\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$TSLA Earnings — #13 WSB (40 mentions\, down 1)
 UID:TSLA-earnings-2026-07-22@wsb-tracker
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260806
-DESCRIPTION:Nebius Group\nWSB rank: #9\nMentions (24h): 84\nMomentum: up 2\nImplied move: ±31.42%\nATM straddle: $61.32 (exp 2026-08-07)\n\nhttps://apewisdom.io/wallstreetbets/
-SUMMARY:$NBIS Earnings — #9 WSB (84 mentions\, up 2)
+DESCRIPTION:Nebius Group\nWSB rank: #10\nMentions (24h): 71\nMomentum: down 1\nImplied move: ±31.02%\nATM straddle: $67.56 (exp 2026-08-07)\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$NBIS Earnings — #10 WSB (71 mentions\, down 1)
 UID:NBIS-earnings-2026-08-06@wsb-tracker
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260810
-DESCRIPTION:AST SpaceMobile\nWSB rank: #20\nMentions (24h): 24\nMomentum: down 2\nImplied move: ±30.76%\nATM straddle: $22.83 (exp 2026-08-14)\n\nhttps://apewisdom.io/wallstreetbets/
-SUMMARY:$ASTS Earnings — #20 WSB (24 mentions\, down 2)
-UID:ASTS-earnings-2026-08-10@wsb-tracker
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260723
-DESCRIPTION:Alphabet (Google)\nWSB rank: #21\nMentions (24h): 23\nMomentum: up 3\nImplied move: ±6.02%\nATM straddle: $21.9 (exp 2026-07-24)\n\nhttps://apewisdom.io/wallstreetbets/
-SUMMARY:$GOOG Earnings — #21 WSB (23 mentions\, up 3)
-UID:GOOG-earnings-2026-07-23@wsb-tracker
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260722
-DESCRIPTION:ServiceNow\nWSB rank: #23\nMentions (24h): 23\nMomentum: down 2\nImplied move: ±14.45%\nATM straddle: $16.0 (exp 2026-07-24)\n\nhttps://apewisdom.io/wallstreetbets/
-SUMMARY:$NOW Earnings — #23 WSB (23 mentions\, down 2)
-UID:NOW-earnings-2026-07-22@wsb-tracker
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260730
-DESCRIPTION:Amazon\nWSB rank: #19\nMentions (24h): 24\nMomentum: up 24\nImplied move: ±8.86%\nATM straddle: $21.8 (exp 2026-07-31)\n\nhttps://apewisdom.io/wallstreetbets/
-SUMMARY:$AMZN Earnings — #19 WSB (24 mentions\, up 24)
-UID:AMZN-earnings-2026-07-30@wsb-tracker
+DTSTART;VALUE=DATE:20260728
+DESCRIPTION:Bloom Energy\nWSB rank: #25\nMentions (24h): 21\nMomentum: up 53\nImplied move: ±32.3%\nATM straddle: $85.66 (exp 2026-07-31)\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$BE Earnings — #25 WSB (21 mentions\, up 53)
+UID:BE-earnings-2026-07-28@wsb-tracker
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260807
-DESCRIPTION:Wendy’s Company\nWSB rank: #11\nMentions (24h): 57\nMomentum: down 5\nImplied move: ±20.18%\nATM straddle: $1.57 (exp 2026-08-07)\n\nhttps://apewisdom.io/wallstreetbets/
-SUMMARY:$WEN Earnings — #11 WSB (57 mentions\, down 5)
+DESCRIPTION:Wendy’s Company\nWSB rank: #11\nMentions (24h): 57\nMomentum: flat\nImplied move: ±17.72%\nATM straddle: $1.32 (exp 2026-08-07)\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$WEN Earnings — #11 WSB (57 mentions\, flat)
 UID:WEN-earnings-2026-08-07@wsb-tracker
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260722
-DESCRIPTION:IBM\nWSB rank: #18\nMentions (24h): 29\nMomentum: up 26\nImplied move: ±11.38%\nATM straddle: $34.85 (exp 2026-07-24)\n\nhttps://apewisdom.io/wallstreetbets/
-SUMMARY:$IBM Earnings — #18 WSB (29 mentions\, up 26)
-UID:IBM-earnings-2026-07-22@wsb-tracker
+DTSTART;VALUE=DATE:20260923
+DESCRIPTION:Micron Technology\nWSB rank: #1\nMentions (24h): 408\nMomentum: flat\nImplied move: ±38.11%\nATM straddle: $386.96 (exp 2026-10-16)\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$MU Earnings — #1 WSB (408 mentions\, flat)
+UID:MU-earnings-2026-09-23@wsb-tracker
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260909
+DESCRIPTION:Oracle\nWSB rank: #16\nMentions (24h): 33\nMomentum: up 9\nImplied move: ±23.54%\nATM straddle: $34.86 (exp 2026-09-18)\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$ORCL Earnings — #16 WSB (33 mentions\, up 9)
+UID:ORCL-earnings-2026-09-09@wsb-tracker
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260730
-DESCRIPTION:DTE Energy\nWSB rank: #8\nMentions (24h): 109\nMomentum: up 11\nImplied move: ±5.59%\nATM straddle: $8.6 (exp 2026-08-21)\n\nhttps://apewisdom.io/wallstreetbets/
-SUMMARY:$DTE Earnings — #8 WSB (109 mentions\, up 11)
+DESCRIPTION:DTE Energy\nWSB rank: #9\nMentions (24h): 80\nMomentum: down 1\nImplied move: ±6.01%\nATM straddle: $9.09 (exp 2026-08-21)\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$DTE Earnings — #9 WSB (80 mentions\, down 1)
 UID:DTE-earnings-2026-07-30@wsb-tracker
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260804
-DESCRIPTION:AMD\nWSB rank: #15\nMentions (24h): 41\nMomentum: down 5\nImplied move: ±20.22%\nATM straddle: $104.38 (exp 2026-08-07)\n\nhttps://apewisdom.io/wallstreetbets/
-SUMMARY:$AMD Earnings — #15 WSB (41 mentions\, down 5)
+DESCRIPTION:AMD\nWSB rank: #15\nMentions (24h): 37\nMomentum: flat\nImplied move: ±20.28%\nATM straddle: $111.04 (exp 2026-08-07)\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$AMD Earnings — #15 WSB (37 mentions\, flat)
 UID:AMD-earnings-2026-08-04@wsb-tracker
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260903
+DESCRIPTION:Broadcom\nWSB rank: #12\nMentions (24h): 46\nMomentum: up 20\nImplied move: ±19.09%\nATM straddle: $76.04 (exp 2026-09-18)\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$AVGO Earnings — #12 WSB (46 mentions\, up 20)
+UID:AVGO-earnings-2026-09-03@wsb-tracker
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260804
+DESCRIPTION:Gartner\nWSB rank: #21\nMentions (24h): 23\nMomentum: up 9\nImplied move: ±17.11%\nATM straddle: $22.73 (exp 2026-08-21)\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$IT Earnings — #21 WSB (23 mentions\, up 9)
+UID:IT-earnings-2026-08-04@wsb-tracker
+END:VEVENT
+BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260806
-DESCRIPTION:Rocket Lab USA\nWSB rank: #14\nMentions (24h): 48\nMomentum: flat\nImplied move: ±24.88%\nATM straddle: $20.75 (exp 2026-08-07)\n\nhttps://apewisdom.io/wallstreetbets/
-SUMMARY:$RKLB Earnings — #14 WSB (48 mentions\, flat)
+DESCRIPTION:Rocket Lab USA\nWSB rank: #19\nMentions (24h): 28\nMomentum: down 5\nImplied move: ±22.58%\nATM straddle: $19.0 (exp 2026-08-07)\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$RKLB Earnings — #19 WSB (28 mentions\, down 5)
 UID:RKLB-earnings-2026-08-06@wsb-tracker
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260729
-DESCRIPTION:Meta Platforms (Facebook)\nWSB rank: #10\nMentions (24h): 73\nMomentum: up 3\nImplied move: ±10.23%\nATM straddle: $62.98 (exp 2026-07-31)\n\nhttps://apewisdom.io/wallstreetbets/
-SUMMARY:$META Earnings — #10 WSB (73 mentions\, up 3)
+DESCRIPTION:Meta Platforms (Facebook)\nWSB rank: #8\nMentions (24h): 82\nMomentum: up 2\nImplied move: ±10.72%\nATM straddle: $62.93 (exp 2026-07-31)\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$META Earnings — #8 WSB (82 mentions\, up 2)
 UID:META-earnings-2026-07-29@wsb-tracker
 END:VEVENT
 END:VCALENDAR
