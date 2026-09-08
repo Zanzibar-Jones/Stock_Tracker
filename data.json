@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-09-07T16:16:37.372281+00:00",
+  "generated_at": "2026-09-08T14:52:35.985210+00:00",
   "tickers": [
     {
       "rank": 1,
       "ticker": "AGI",
       "name": "Alamos Gold",
-      "mentions": 217,
-      "rank_change": 15,
-      "momentum_label": "up 15",
+      "mentions": 226,
+      "rank_change": 0,
+      "momentum_label": "flat",
       "next_earnings": "2026-10-28",
-      "days_to_earnings": 51,
-      "spot": 36.97,
+      "days_to_earnings": 50,
+      "spot": 36.74,
       "play": {
-        "spot": 36.97,
+        "spot": 36.74,
         "post_earnings_exp": "2026-12-18",
         "days_post_earnings": 51,
-        "straddle_price": 8.3,
-        "implied_move_pct": 22.45,
-        "atm_iv_pct": 53.13,
+        "straddle_price": 8.2,
+        "implied_move_pct": 22.32,
+        "atm_iv_pct": 52.88,
         "historical_moves": [
           {
             "date": "2026-07-29",
@@ -39,10 +39,10 @@
         "verdict": {
           "signal": "sell_premium",
           "label": "Premium expensive",
-          "reason": "Implied move (\u00b122.45%) is 467% above historical avg (\u00b14.0%, last 4). Market pricing more vol than typical.",
-          "suggested": "Put credit spread (sell premium, bullish bias)",
+          "reason": "Implied move (\u00b122.32%) is 464% above historical avg (\u00b14.0%, last 4). Market pricing more vol than typical.",
+          "suggested": "Iron condor (sell premium, neutral)",
           "confidence": "high",
-          "ratio": 5.67
+          "ratio": 5.64
         }
       }
     },
@@ -50,121 +50,31 @@
       "rank": 2,
       "ticker": "SPY",
       "name": "SPDR S&P 500 ETF Trust",
-      "mentions": 32,
-      "rank_change": 0,
-      "momentum_label": "flat",
+      "mentions": 115,
+      "rank_change": 1,
+      "momentum_label": "up 1",
       "next_earnings": null,
       "days_to_earnings": null,
-      "spot": 770.19,
+      "spot": 767.42,
       "play": null
     },
     {
       "rank": 3,
-      "ticker": "NOW",
-      "name": "ServiceNow",
-      "mentions": 25,
-      "rank_change": 125,
-      "momentum_label": "up 125",
-      "next_earnings": "2026-10-28",
-      "days_to_earnings": 51,
-      "spot": 141.26,
-      "play": {
-        "spot": 141.26,
-        "post_earnings_exp": "2026-11-20",
-        "days_post_earnings": 23,
-        "straddle_price": 29.38,
-        "implied_move_pct": 20.79,
-        "atm_iv_pct": 57.89,
-        "historical_moves": [
-          {
-            "date": "2026-07-22",
-            "move_pct": -9.92
-          },
-          {
-            "date": "2026-04-22",
-            "move_pct": -15.34
-          },
-          {
-            "date": "2026-01-28",
-            "move_pct": -11.43
-          },
-          {
-            "date": "2025-10-29",
-            "move_pct": -0.34
-          }
-        ],
-        "verdict": {
-          "signal": "sell_premium",
-          "label": "Premium expensive",
-          "reason": "Implied move (\u00b120.79%) is 125% above historical avg (\u00b19.3%, last 4). Market pricing more vol than typical.",
-          "suggested": "Put credit spread (sell premium, bullish bias)",
-          "confidence": "high",
-          "ratio": 2.25
-        }
-      }
-    },
-    {
-      "rank": 4,
-      "ticker": "NVDA",
-      "name": "NVIDIA",
-      "mentions": 24,
-      "rank_change": 2,
-      "momentum_label": "up 2",
-      "next_earnings": "2026-11-17",
-      "days_to_earnings": 71,
-      "spot": 230.36,
-      "play": {
-        "spot": 230.36,
-        "post_earnings_exp": "2026-11-20",
-        "days_post_earnings": 3,
-        "straddle_price": 32.42,
-        "implied_move_pct": 14.08,
-        "atm_iv_pct": 39.33,
-        "historical_moves": [
-          {
-            "date": "2026-08-26",
-            "move_pct": 7.01
-          },
-          {
-            "date": "2026-05-20",
-            "move_pct": -0.5
-          },
-          {
-            "date": "2026-02-25",
-            "move_pct": -4.13
-          },
-          {
-            "date": "2025-11-19",
-            "move_pct": -0.4
-          }
-        ],
-        "verdict": {
-          "signal": "sell_premium",
-          "label": "Premium expensive",
-          "reason": "Implied move (\u00b114.08%) is 368% above historical avg (\u00b13.0%, last 4). Market pricing more vol than typical.",
-          "suggested": "Iron condor (sell premium, neutral)",
-          "confidence": "high",
-          "ratio": 4.68
-        }
-      }
-    },
-    {
-      "rank": 5,
       "ticker": "MU",
       "name": "Micron Technology",
-      "mentions": 22,
-      "rank_change": -4,
-      "momentum_label": "down 4",
+      "mentions": 112,
+      "rank_change": -1,
+      "momentum_label": "down 1",
       "next_earnings": "2026-09-30",
-      "days_to_earnings": 23,
-      "spot": 1016.59,
+      "days_to_earnings": 22,
+      "spot": 1017.6,
       "play": {
-        "spot": 1016.59,
+        "spot": 1017.6,
         "post_earnings_exp": "2026-10-02",
         "days_post_earnings": 2,
-        "straddle_price": 147.22,
-        "implied_move_pct": 14.48,
-        "atm_iv_pct": 68.15,
+        "straddle_price": 148.07,
+        "implied_move_pct": 14.55,
+        "atm_iv_pct": 69.69,
         "historical_moves": [
           {
             "date": "2026-06-24",
@@ -186,369 +96,75 @@
         "verdict": {
           "signal": "sell_premium",
           "label": "Premium expensive",
-          "reason": "Implied move (\u00b114.48%) is 108% above historical avg (\u00b17.0%, last 4). Market pricing more vol than typical.",
+          "reason": "Implied move (\u00b114.55%) is 109% above historical avg (\u00b17.0%, last 4). Market pricing more vol than typical.",
           "suggested": "Iron condor (sell premium, neutral)",
           "confidence": "high",
-          "ratio": 2.08
+          "ratio": 2.09
         }
       }
     },
     {
-      "rank": 6,
-      "ticker": "LULU",
-      "name": "lululemon athletica",
-      "mentions": 19,
+      "rank": 4,
+      "ticker": "NVDA",
+      "name": "NVIDIA",
+      "mentions": 61,
       "rank_change": 1,
       "momentum_label": "up 1",
-      "next_earnings": null,
-      "days_to_earnings": null,
-      "spot": 100.61,
-      "play": null
-    },
-    {
-      "rank": 7,
-      "ticker": "NKE",
-      "name": "Nike",
-      "mentions": 17,
-      "rank_change": 6,
-      "momentum_label": "up 6",
-      "next_earnings": "2026-10-01",
-      "days_to_earnings": 24,
-      "spot": 38.4,
+      "next_earnings": "2026-11-17",
+      "days_to_earnings": 70,
+      "spot": 227.04,
       "play": {
-        "spot": 38.4,
-        "post_earnings_exp": "2026-10-02",
-        "days_post_earnings": 1,
-        "straddle_price": 3.96,
-        "implied_move_pct": 10.33,
-        "atm_iv_pct": 49.22,
-        "historical_moves": [
-          {
-            "date": "2026-06-30",
-            "move_pct": 3.81
-          },
-          {
-            "date": "2026-03-31",
-            "move_pct": -12.9
-          },
-          {
-            "date": "2025-12-18",
-            "move_pct": -10.63
-          },
-          {
-            "date": "2025-09-30",
-            "move_pct": 6.69
-          }
-        ],
-        "verdict": {
-          "signal": "sell_premium",
-          "label": "Premium expensive",
-          "reason": "Implied move (\u00b110.33%) is 21% above historical avg (\u00b18.5%, last 4). Market pricing more vol than typical.",
-          "suggested": "Iron condor (sell premium, neutral)",
-          "confidence": "high",
-          "ratio": 1.21
-        }
-      }
-    },
-    {
-      "rank": 8,
-      "ticker": "QQQ",
-      "name": "Invesco QQQ ETF",
-      "mentions": 15,
-      "rank_change": 13,
-      "momentum_label": "up 13",
-      "next_earnings": null,
-      "days_to_earnings": null,
-      "spot": 718.96,
-      "play": null
-    },
-    {
-      "rank": 9,
-      "ticker": "AMZN",
-      "name": "Amazon",
-      "mentions": 13,
-      "rank_change": 29,
-      "momentum_label": "up 29",
-      "next_earnings": "2026-10-29",
-      "days_to_earnings": 52,
-      "spot": 258.51,
-      "play": {
-        "spot": 258.51,
+        "spot": 227.04,
         "post_earnings_exp": "2026-11-20",
-        "days_post_earnings": 22,
-        "straddle_price": 34.32,
-        "implied_move_pct": 13.28,
-        "atm_iv_pct": 36.98,
+        "days_post_earnings": 3,
+        "straddle_price": 32.1,
+        "implied_move_pct": 14.14,
+        "atm_iv_pct": 39.72,
         "historical_moves": [
           {
-            "date": "2026-07-30",
-            "move_pct": 19.82
+            "date": "2026-08-26",
+            "move_pct": 7.01
           },
           {
-            "date": "2026-04-29",
-            "move_pct": 2.06
-          },
-          {
-            "date": "2026-02-05",
-            "move_pct": -9.73
-          },
-          {
-            "date": "2025-10-30",
-            "move_pct": 6.04
-          }
-        ],
-        "verdict": {
-          "signal": "sell_premium",
-          "label": "Premium expensive",
-          "reason": "Implied move (\u00b113.28%) is 41% above historical avg (\u00b19.4%, last 4). Market pricing more vol than typical.",
-          "suggested": "Put credit spread (sell premium, bullish bias)",
-          "confidence": "high",
-          "ratio": 1.41
-        }
-      }
-    },
-    {
-      "rank": 10,
-      "ticker": "TSLA",
-      "name": "Tesla",
-      "mentions": 12,
-      "rank_change": 0,
-      "momentum_label": "flat",
-      "next_earnings": "2026-10-21",
-      "days_to_earnings": 44,
-      "spot": 354.08,
-      "play": {
-        "spot": 354.08,
-        "post_earnings_exp": "2026-10-23",
-        "days_post_earnings": 2,
-        "straddle_price": 44.82,
-        "implied_move_pct": 12.66,
-        "atm_iv_pct": 45.61,
-        "historical_moves": [
-          {
-            "date": "2026-07-22",
-            "move_pct": -15.63
-          },
-          {
-            "date": "2026-04-22",
-            "move_pct": -3.29
-          },
-          {
-            "date": "2026-01-28",
-            "move_pct": -3.33
-          },
-          {
-            "date": "2025-10-22",
-            "move_pct": 1.44
-          }
-        ],
-        "verdict": {
-          "signal": "sell_premium",
-          "label": "Premium expensive",
-          "reason": "Implied move (\u00b112.66%) is 114% above historical avg (\u00b15.9%, last 4). Market pricing more vol than typical.",
-          "suggested": "Iron condor (sell premium, neutral)",
-          "confidence": "high",
-          "ratio": 2.14
-        }
-      }
-    },
-    {
-      "rank": 11,
-      "ticker": "DTE",
-      "name": "DTE Energy",
-      "mentions": 12,
-      "rank_change": -8,
-      "momentum_label": "down 8",
-      "next_earnings": "2026-10-29",
-      "days_to_earnings": 52,
-      "spot": 136.08,
-      "play": {
-        "spot": 136.08,
-        "post_earnings_exp": "2027-01-15",
-        "days_post_earnings": 78,
-        "straddle_price": 13.4,
-        "implied_move_pct": 9.85,
-        "atm_iv_pct": 25.61,
-        "historical_moves": [
-          {
-            "date": "2026-07-28",
-            "move_pct": -2.52
-          },
-          {
-            "date": "2026-04-30",
-            "move_pct": 1.2
-          },
-          {
-            "date": "2026-02-17",
-            "move_pct": -1.6
-          },
-          {
-            "date": "2025-10-30",
-            "move_pct": -2.39
-          }
-        ],
-        "verdict": {
-          "signal": "sell_premium",
-          "label": "Premium expensive",
-          "reason": "Implied move (\u00b19.85%) is 411% above historical avg (\u00b11.9%, last 4). Market pricing more vol than typical.",
-          "suggested": "Iron condor (sell premium, neutral)",
-          "confidence": "high",
-          "ratio": 5.11
-        }
-      }
-    },
-    {
-      "rank": 12,
-      "ticker": "YOU",
-      "name": "CLEAR Secure",
-      "mentions": 12,
-      "rank_change": 42,
-      "momentum_label": "up 42",
-      "next_earnings": "2026-11-05",
-      "days_to_earnings": 59,
-      "spot": 44.33,
-      "play": {
-        "spot": 44.33,
-        "post_earnings_exp": "2026-11-20",
-        "days_post_earnings": 15,
-        "straddle_price": 8.55,
-        "implied_move_pct": 19.29,
-        "atm_iv_pct": 53.63,
-        "historical_moves": [
-          {
-            "date": "2026-08-05",
-            "move_pct": -4.86
-          },
-          {
-            "date": "2026-05-06",
-            "move_pct": -1.02
+            "date": "2026-05-20",
+            "move_pct": -0.5
           },
           {
             "date": "2026-02-25",
-            "move_pct": 40.78
+            "move_pct": -4.13
           },
           {
-            "date": "2025-11-06",
-            "move_pct": 13.49
+            "date": "2025-11-19",
+            "move_pct": -0.4
           }
         ],
         "verdict": {
           "signal": "sell_premium",
           "label": "Premium expensive",
-          "reason": "Implied move (\u00b119.29%) is 28% above historical avg (\u00b115.0%, last 4). Market pricing more vol than typical.",
-          "suggested": "Put credit spread (sell premium, bullish bias)",
-          "confidence": "high",
-          "ratio": 1.28
-        }
-      }
-    },
-    {
-      "rank": 13,
-      "ticker": "BE",
-      "name": "Bloom Energy",
-      "mentions": 11,
-      "rank_change": -8,
-      "momentum_label": "down 8",
-      "next_earnings": "2026-10-27",
-      "days_to_earnings": 50,
-      "spot": 252.87,
-      "play": {
-        "spot": 252.87,
-        "post_earnings_exp": "2026-11-20",
-        "days_post_earnings": 24,
-        "straddle_price": 85.92,
-        "implied_move_pct": 33.98,
-        "atm_iv_pct": 95.19,
-        "historical_moves": [
-          {
-            "date": "2026-07-28",
-            "move_pct": -12.98
-          },
-          {
-            "date": "2026-04-28",
-            "move_pct": 22.71
-          },
-          {
-            "date": "2026-02-05",
-            "move_pct": -2.93
-          },
-          {
-            "date": "2025-10-28",
-            "move_pct": 23.2
-          }
-        ],
-        "verdict": {
-          "signal": "sell_premium",
-          "label": "Premium expensive",
-          "reason": "Implied move (\u00b133.98%) is 120% above historical avg (\u00b115.5%, last 4). Market pricing more vol than typical.",
+          "reason": "Implied move (\u00b114.14%) is 370% above historical avg (\u00b13.0%, last 4). Market pricing more vol than typical.",
           "suggested": "Iron condor (sell premium, neutral)",
           "confidence": "high",
-          "ratio": 2.2
+          "ratio": 4.7
         }
       }
     },
     {
-      "rank": 14,
-      "ticker": "IT",
-      "name": "Gartner",
-      "mentions": 10,
-      "rank_change": 142,
-      "momentum_label": "up 142",
-      "next_earnings": "2026-11-03",
-      "days_to_earnings": 57,
-      "spot": 186.42,
-      "play": {
-        "spot": 186.42,
-        "post_earnings_exp": "2026-12-18",
-        "days_post_earnings": 45,
-        "straddle_price": 39.65,
-        "implied_move_pct": 21.27,
-        "atm_iv_pct": 52.75,
-        "historical_moves": [
-          {
-            "date": "2026-08-04",
-            "move_pct": 23.02
-          },
-          {
-            "date": "2026-05-05",
-            "move_pct": 2.26
-          },
-          {
-            "date": "2026-02-03",
-            "move_pct": -22.02
-          },
-          {
-            "date": "2025-11-04",
-            "move_pct": -3.58
-          }
-        ],
-        "verdict": {
-          "signal": "sell_premium",
-          "label": "Premium expensive",
-          "reason": "Implied move (\u00b121.27%) is 67% above historical avg (\u00b112.7%, last 4). Market pricing more vol than typical.",
-          "suggested": "Put credit spread (sell premium, bullish bias)",
-          "confidence": "high",
-          "ratio": 1.67
-        }
-      }
-    },
-    {
-      "rank": 15,
+      "rank": 5,
       "ticker": "SNDK",
       "name": "Sandisk",
-      "mentions": 10,
-      "rank_change": -11,
-      "momentum_label": "down 11",
+      "mentions": 49,
+      "rank_change": 3,
+      "momentum_label": "up 3",
       "next_earnings": "2026-11-06",
-      "days_to_earnings": 60,
-      "spot": 1740.0,
+      "days_to_earnings": 59,
+      "spot": 1782.28,
       "play": {
-        "spot": 1740.0,
+        "spot": 1782.28,
         "post_earnings_exp": "2026-11-20",
         "days_post_earnings": 14,
-        "straddle_price": 508.05,
-        "implied_move_pct": 29.2,
-        "atm_iv_pct": 81.19,
+        "straddle_price": 522.7,
+        "implied_move_pct": 29.33,
+        "atm_iv_pct": 82.17,
         "historical_moves": [
           {
             "date": "2026-08-05",
@@ -570,30 +186,300 @@
         "verdict": {
           "signal": "sell_premium",
           "label": "Premium expensive",
-          "reason": "Implied move (\u00b129.2%) is 170% above historical avg (\u00b110.8%, last 4). Market pricing more vol than typical.",
+          "reason": "Implied move (\u00b129.33%) is 172% above historical avg (\u00b110.8%, last 4). Market pricing more vol than typical.",
           "suggested": "Iron condor (sell premium, neutral)",
           "confidence": "high",
-          "ratio": 2.7
+          "ratio": 2.72
         }
       }
     },
     {
-      "rank": 16,
+      "rank": 6,
+      "ticker": "BE",
+      "name": "Bloom Energy",
+      "mentions": 43,
+      "rank_change": 10,
+      "momentum_label": "up 10",
+      "next_earnings": "2026-10-27",
+      "days_to_earnings": 49,
+      "spot": 276.39,
+      "play": {
+        "spot": 276.39,
+        "post_earnings_exp": "2026-11-20",
+        "days_post_earnings": 24,
+        "straddle_price": 92.85,
+        "implied_move_pct": 33.59,
+        "atm_iv_pct": 93.55,
+        "historical_moves": [
+          {
+            "date": "2026-07-28",
+            "move_pct": -12.98
+          },
+          {
+            "date": "2026-04-28",
+            "move_pct": 22.71
+          },
+          {
+            "date": "2026-02-05",
+            "move_pct": -2.93
+          },
+          {
+            "date": "2025-10-28",
+            "move_pct": 23.2
+          }
+        ],
+        "verdict": {
+          "signal": "sell_premium",
+          "label": "Premium expensive",
+          "reason": "Implied move (\u00b133.59%) is 117% above historical avg (\u00b115.5%, last 4). Market pricing more vol than typical.",
+          "suggested": "Iron condor (sell premium, neutral)",
+          "confidence": "high",
+          "ratio": 2.17
+        }
+      }
+    },
+    {
+      "rank": 7,
+      "ticker": "ORCL",
+      "name": "Oracle",
+      "mentions": 42,
+      "rank_change": 12,
+      "momentum_label": "up 12",
+      "next_earnings": "2026-09-10",
+      "days_to_earnings": 2,
+      "spot": 163.71,
+      "play": {
+        "spot": 163.71,
+        "post_earnings_exp": "2026-09-11",
+        "days_post_earnings": 1,
+        "straddle_price": 18.65,
+        "implied_move_pct": 11.39,
+        "atm_iv_pct": 136.84,
+        "historical_moves": [
+          {
+            "date": "2026-06-10",
+            "move_pct": -10.55
+          },
+          {
+            "date": "2026-03-10",
+            "move_pct": 7.63
+          },
+          {
+            "date": "2025-12-10",
+            "move_pct": -10.24
+          },
+          {
+            "date": "2025-09-09",
+            "move_pct": 37.68
+          }
+        ],
+        "verdict": {
+          "signal": "buy_premium",
+          "label": "Premium cheap",
+          "reason": "Implied move (\u00b111.39%) is 31% below historical avg (\u00b116.5%, last 4). Market under-pricing typical earnings vol.",
+          "suggested": "Long straddle (buy premium, neutral)",
+          "confidence": "high",
+          "ratio": 0.69
+        }
+      }
+    },
+    {
+      "rank": 8,
+      "ticker": "NBIS",
+      "name": "Nebius Group",
+      "mentions": 36,
+      "rank_change": 27,
+      "momentum_label": "up 27",
+      "next_earnings": "2026-11-10",
+      "days_to_earnings": 63,
+      "spot": 242.43,
+      "play": {
+        "spot": 242.43,
+        "post_earnings_exp": "2026-11-20",
+        "days_post_earnings": 10,
+        "straddle_price": 81.3,
+        "implied_move_pct": 33.54,
+        "atm_iv_pct": 94.47,
+        "historical_moves": [
+          {
+            "date": "2026-08-12",
+            "move_pct": 31.99
+          },
+          {
+            "date": "2026-05-13",
+            "move_pct": 23.47
+          },
+          {
+            "date": "2026-02-12",
+            "move_pct": 10.61
+          },
+          {
+            "date": "2025-11-11",
+            "move_pct": -14.18
+          }
+        ],
+        "verdict": {
+          "signal": "sell_premium",
+          "label": "Premium expensive",
+          "reason": "Implied move (\u00b133.54%) is 67% above historical avg (\u00b120.1%, last 4). Market pricing more vol than typical.",
+          "suggested": "Put credit spread (sell premium, bullish bias)",
+          "confidence": "high",
+          "ratio": 1.67
+        }
+      }
+    },
+    {
+      "rank": 9,
+      "ticker": "AAPL",
+      "name": "Apple",
+      "mentions": 28,
+      "rank_change": 18,
+      "momentum_label": "up 18",
+      "next_earnings": "2026-10-29",
+      "days_to_earnings": 51,
+      "spot": 315.98,
+      "play": {
+        "spot": 315.98,
+        "post_earnings_exp": "2026-11-20",
+        "days_post_earnings": 22,
+        "straddle_price": 31.25,
+        "implied_move_pct": 9.89,
+        "atm_iv_pct": 27.71,
+        "historical_moves": [
+          {
+            "date": "2026-07-30",
+            "move_pct": -8.66
+          },
+          {
+            "date": "2026-04-30",
+            "move_pct": 3.69
+          },
+          {
+            "date": "2026-01-29",
+            "move_pct": 1.19
+          },
+          {
+            "date": "2025-10-30",
+            "move_pct": 0.25
+          }
+        ],
+        "verdict": {
+          "signal": "sell_premium",
+          "label": "Premium expensive",
+          "reason": "Implied move (\u00b19.89%) is 187% above historical avg (\u00b13.4%, last 4). Market pricing more vol than typical.",
+          "suggested": "Put credit spread (sell premium, bullish bias)",
+          "confidence": "high",
+          "ratio": 2.87
+        }
+      }
+    },
+    {
+      "rank": 10,
+      "ticker": "TSLA",
+      "name": "Tesla",
+      "mentions": 27,
+      "rank_change": 8,
+      "momentum_label": "up 8",
+      "next_earnings": "2026-10-21",
+      "days_to_earnings": 43,
+      "spot": 364.51,
+      "play": {
+        "spot": 364.51,
+        "post_earnings_exp": "2026-10-23",
+        "days_post_earnings": 2,
+        "straddle_price": 46.58,
+        "implied_move_pct": 12.78,
+        "atm_iv_pct": 45.74,
+        "historical_moves": [
+          {
+            "date": "2026-07-22",
+            "move_pct": -15.63
+          },
+          {
+            "date": "2026-04-22",
+            "move_pct": -3.29
+          },
+          {
+            "date": "2026-01-28",
+            "move_pct": -3.33
+          },
+          {
+            "date": "2025-10-22",
+            "move_pct": 1.44
+          }
+        ],
+        "verdict": {
+          "signal": "sell_premium",
+          "label": "Premium expensive",
+          "reason": "Implied move (\u00b112.78%) is 116% above historical avg (\u00b15.9%, last 4). Market pricing more vol than typical.",
+          "suggested": "Iron condor (sell premium, neutral)",
+          "confidence": "high",
+          "ratio": 2.16
+        }
+      }
+    },
+    {
+      "rank": 11,
+      "ticker": "GOOGL",
+      "name": "Alphabet (Google)",
+      "mentions": 24,
+      "rank_change": 23,
+      "momentum_label": "up 23",
+      "next_earnings": "2026-10-28",
+      "days_to_earnings": 50,
+      "spot": 336.95,
+      "play": {
+        "spot": 336.95,
+        "post_earnings_exp": "2026-11-20",
+        "days_post_earnings": 23,
+        "straddle_price": 40.7,
+        "implied_move_pct": 12.08,
+        "atm_iv_pct": 34.18,
+        "historical_moves": [
+          {
+            "date": "2026-07-22",
+            "move_pct": -8.49
+          },
+          {
+            "date": "2026-04-29",
+            "move_pct": 10.01
+          },
+          {
+            "date": "2026-02-04",
+            "move_pct": -2.49
+          },
+          {
+            "date": "2025-10-29",
+            "move_pct": 5.24
+          }
+        ],
+        "verdict": {
+          "signal": "sell_premium",
+          "label": "Premium expensive",
+          "reason": "Implied move (\u00b112.08%) is 84% above historical avg (\u00b16.6%, last 4). Market pricing more vol than typical.",
+          "suggested": "Put credit spread (sell premium, bullish bias)",
+          "confidence": "high",
+          "ratio": 1.84
+        }
+      }
+    },
+    {
+      "rank": 12,
       "ticker": "INTC",
       "name": "Intel",
-      "mentions": 9,
-      "rank_change": 6,
-      "momentum_label": "up 6",
+      "mentions": 23,
+      "rank_change": 0,
+      "momentum_label": "flat",
       "next_earnings": "2026-10-22",
-      "days_to_earnings": 45,
-      "spot": 95.8,
+      "days_to_earnings": 44,
+      "spot": 103.04,
       "play": {
-        "spot": 95.8,
+        "spot": 103.04,
         "post_earnings_exp": "2026-10-23",
         "days_post_earnings": 1,
-        "straddle_price": 18.55,
-        "implied_move_pct": 19.36,
-        "atm_iv_pct": 67.72,
+        "straddle_price": 20.62,
+        "implied_move_pct": 20.02,
+        "atm_iv_pct": 70.87,
         "historical_moves": [
           {
             "date": "2026-07-23",
@@ -615,382 +501,463 @@
         "verdict": {
           "signal": "sell_premium",
           "label": "Premium expensive",
-          "reason": "Implied move (\u00b119.36%) is 36% above historical avg (\u00b114.3%, last 4). Market pricing more vol than typical.",
+          "reason": "Implied move (\u00b120.02%) is 40% above historical avg (\u00b114.3%, last 4). Market pricing more vol than typical.",
           "suggested": "Iron condor (sell premium, neutral)",
           "confidence": "high",
-          "ratio": 1.36
+          "ratio": 1.4
+        }
+      }
+    },
+    {
+      "rank": 13,
+      "ticker": "QQQ",
+      "name": "Invesco QQQ ETF",
+      "mentions": 23,
+      "rank_change": -3,
+      "momentum_label": "down 3",
+      "next_earnings": null,
+      "days_to_earnings": null,
+      "spot": 718.27,
+      "play": null
+    },
+    {
+      "rank": 14,
+      "ticker": "DTE",
+      "name": "DTE Energy",
+      "mentions": 22,
+      "rank_change": -1,
+      "momentum_label": "down 1",
+      "next_earnings": "2026-10-29",
+      "days_to_earnings": 51,
+      "spot": 138.01,
+      "play": {
+        "spot": 138.01,
+        "post_earnings_exp": "2027-01-15",
+        "days_post_earnings": 78,
+        "straddle_price": 10.65,
+        "implied_move_pct": 7.72,
+        "atm_iv_pct": 25.78,
+        "historical_moves": [
+          {
+            "date": "2026-07-28",
+            "move_pct": -2.52
+          },
+          {
+            "date": "2026-04-30",
+            "move_pct": 1.2
+          },
+          {
+            "date": "2026-02-17",
+            "move_pct": -1.6
+          },
+          {
+            "date": "2025-10-30",
+            "move_pct": -2.39
+          }
+        ],
+        "verdict": {
+          "signal": "sell_premium",
+          "label": "Premium expensive",
+          "reason": "Implied move (\u00b17.72%) is 301% above historical avg (\u00b11.9%, last 4). Market pricing more vol than typical.",
+          "suggested": "Iron condor (sell premium, neutral)",
+          "confidence": "high",
+          "ratio": 4.01
+        }
+      }
+    },
+    {
+      "rank": 15,
+      "ticker": "LULU",
+      "name": "lululemon athletica",
+      "mentions": 22,
+      "rank_change": -9,
+      "momentum_label": "down 9",
+      "next_earnings": null,
+      "days_to_earnings": null,
+      "spot": 100.7,
+      "play": null
+    },
+    {
+      "rank": 16,
+      "ticker": "AM",
+      "name": "Antero Midstream",
+      "mentions": 21,
+      "rank_change": 15,
+      "momentum_label": "up 15",
+      "next_earnings": "2026-10-28",
+      "days_to_earnings": 50,
+      "spot": 22.8,
+      "play": {
+        "spot": 22.8,
+        "post_earnings_exp": "2026-12-18",
+        "days_post_earnings": 51,
+        "straddle_price": 2.28,
+        "implied_move_pct": 9.98,
+        "atm_iv_pct": 28.46,
+        "historical_moves": [
+          {
+            "date": "2026-07-29",
+            "move_pct": 0.12
+          },
+          {
+            "date": "2026-04-29",
+            "move_pct": 1.04
+          },
+          {
+            "date": "2026-02-11",
+            "move_pct": 5.08
+          },
+          {
+            "date": "2025-10-29",
+            "move_pct": -0.68
+          }
+        ],
+        "verdict": {
+          "signal": "sell_premium",
+          "label": "Premium expensive",
+          "reason": "Implied move (\u00b19.98%) is 477% above historical avg (\u00b11.7%, last 4). Market pricing more vol than typical.",
+          "suggested": "Put credit spread (sell premium, bullish bias)",
+          "confidence": "high",
+          "ratio": 5.77
         }
       }
     },
     {
       "rank": 17,
-      "ticker": "FOR",
-      "name": "Forestar Group",
-      "mentions": 9,
-      "rank_change": 425,
-      "momentum_label": "up 425",
-      "next_earnings": "2026-10-29",
-      "days_to_earnings": 52,
-      "spot": 27.89,
+      "ticker": "NKE",
+      "name": "Nike",
+      "mentions": 15,
+      "rank_change": -10,
+      "momentum_label": "down 10",
+      "next_earnings": "2026-10-01",
+      "days_to_earnings": 23,
+      "spot": 38.33,
       "play": {
-        "spot": 27.89,
-        "post_earnings_exp": "2026-11-20",
-        "days_post_earnings": 22,
-        "straddle_price": 4.9,
-        "implied_move_pct": 17.57,
-        "atm_iv_pct": 70.59,
+        "spot": 38.33,
+        "post_earnings_exp": "2026-10-02",
+        "days_post_earnings": 1,
+        "straddle_price": 3.97,
+        "implied_move_pct": 10.36,
+        "atm_iv_pct": 50.44,
         "historical_moves": [
           {
-            "date": "2026-07-21",
-            "move_pct": -2.84
+            "date": "2026-06-30",
+            "move_pct": 3.81
           },
           {
-            "date": "2026-04-21",
-            "move_pct": 3.29
+            "date": "2026-03-31",
+            "move_pct": -12.9
           },
           {
-            "date": "2026-01-20",
-            "move_pct": -6.2
+            "date": "2025-12-18",
+            "move_pct": -10.63
           },
           {
-            "date": "2025-10-28",
-            "move_pct": 3.88
+            "date": "2025-09-30",
+            "move_pct": 6.69
           }
         ],
         "verdict": {
           "signal": "sell_premium",
           "label": "Premium expensive",
-          "reason": "Implied move (\u00b117.57%) is 334% above historical avg (\u00b14.1%, last 4). Market pricing more vol than typical.",
-          "suggested": "Put credit spread (sell premium, bullish bias)",
+          "reason": "Implied move (\u00b110.36%) is 22% above historical avg (\u00b18.5%, last 4). Market pricing more vol than typical.",
+          "suggested": "Iron condor (sell premium, neutral)",
           "confidence": "high",
-          "ratio": 4.34
+          "ratio": 1.22
         }
       }
     },
     {
       "rank": 18,
-      "ticker": "EU",
-      "name": "enCore Energy",
-      "mentions": 9,
-      "rank_change": 504,
-      "momentum_label": "up 504",
-      "next_earnings": "2026-11-16",
-      "days_to_earnings": 70,
-      "spot": 1.24,
-      "play": {
-        "spot": 1.24,
-        "post_earnings_exp": "2027-01-15",
-        "days_post_earnings": 60,
-        "straddle_price": 0.43,
-        "implied_move_pct": 34.27,
-        "atm_iv_pct": 70.7,
-        "historical_moves": [
-          {
-            "date": "2026-08-13",
-            "move_pct": -12.32
-          },
-          {
-            "date": "2026-05-14",
-            "move_pct": -4.4
-          },
-          {
-            "date": "2026-03-31",
-            "move_pct": 13.69
-          },
-          {
-            "date": "2025-11-10",
-            "move_pct": 0.76
-          }
-        ],
-        "verdict": {
-          "signal": "sell_premium",
-          "label": "Premium expensive",
-          "reason": "Implied move (\u00b134.27%) is 340% above historical avg (\u00b17.8%, last 4). Market pricing more vol than typical.",
-          "suggested": "Put credit spread (sell premium, bullish bias)",
-          "confidence": "high",
-          "ratio": 4.4
-        }
-      }
+      "ticker": "SOXL",
+      "name": "Direxion Shares ETF Trust - Direxion Daily Semiconductor Bull 3X Share",
+      "mentions": 15,
+      "rank_change": 48,
+      "momentum_label": "up 48",
+      "next_earnings": null,
+      "days_to_earnings": null,
+      "spot": 124.68,
+      "play": null
     },
     {
       "rank": 19,
-      "ticker": "DEI",
-      "name": "Douglas Emmett",
-      "mentions": 8,
-      "rank_change": 265,
-      "momentum_label": "up 265",
-      "next_earnings": "2026-11-03",
-      "days_to_earnings": 57,
-      "spot": 11.42,
+      "ticker": "ASTS",
+      "name": "AST SpaceMobile",
+      "mentions": 15,
+      "rank_change": 54,
+      "momentum_label": "up 54",
+      "next_earnings": "2026-11-09",
+      "days_to_earnings": 62,
+      "spot": 65.99,
       "play": {
-        "spot": 11.42,
-        "post_earnings_exp": "2027-01-15",
-        "days_post_earnings": 73,
-        "straddle_price": 2.32,
-        "implied_move_pct": 20.36,
-        "atm_iv_pct": 71.26,
+        "spot": 65.99,
+        "post_earnings_exp": "2026-11-20",
+        "days_post_earnings": 11,
+        "straddle_price": 19.15,
+        "implied_move_pct": 29.02,
+        "atm_iv_pct": 81.79,
         "historical_moves": [
           {
-            "date": "2026-08-04",
-            "move_pct": -0.84
+            "date": "2026-08-10",
+            "move_pct": -0.43
           },
           {
-            "date": "2026-05-05",
-            "move_pct": 9.74
+            "date": "2026-05-11",
+            "move_pct": -2.78
           },
           {
-            "date": "2026-02-10",
-            "move_pct": -2.65
+            "date": "2026-03-02",
+            "move_pct": 17.03
           },
           {
-            "date": "2025-11-04",
-            "move_pct": -5.63
+            "date": "2025-11-10",
+            "move_pct": -1.88
           }
         ],
         "verdict": {
           "signal": "sell_premium",
           "label": "Premium expensive",
-          "reason": "Implied move (\u00b120.36%) is 332% above historical avg (\u00b14.7%, last 4). Market pricing more vol than typical.",
+          "reason": "Implied move (\u00b129.02%) is 425% above historical avg (\u00b15.5%, last 4). Market pricing more vol than typical.",
           "suggested": "Put credit spread (sell premium, bullish bias)",
           "confidence": "high",
-          "ratio": 4.32
+          "ratio": 5.25
         }
       }
     },
     {
       "rank": 20,
-      "ticker": "MSFT",
-      "name": "Microsoft",
-      "mentions": 7,
-      "rank_change": -5,
-      "momentum_label": "down 5",
-      "next_earnings": "2026-10-28",
-      "days_to_earnings": 51,
-      "spot": 499.7,
+      "ticker": "IREN",
+      "name": "Iris Energy",
+      "mentions": 15,
+      "rank_change": 396,
+      "momentum_label": "up 396",
+      "next_earnings": "2026-11-05",
+      "days_to_earnings": 58,
+      "spot": 47.84,
       "play": {
-        "spot": 499.7,
+        "spot": 47.84,
         "post_earnings_exp": "2026-11-20",
-        "days_post_earnings": 23,
-        "straddle_price": 55.52,
-        "implied_move_pct": 11.11,
-        "atm_iv_pct": 31.25,
+        "days_post_earnings": 15,
+        "straddle_price": 16.15,
+        "implied_move_pct": 33.76,
+        "atm_iv_pct": 94.51,
         "historical_moves": [
           {
-            "date": "2026-07-29",
-            "move_pct": 14.68
+            "date": "2026-05-08",
+            "move_pct": -2.99
           },
           {
-            "date": "2026-04-29",
-            "move_pct": -5.0
+            "date": "2026-02-05",
+            "move_pct": -6.92
           },
           {
-            "date": "2026-01-28",
-            "move_pct": -9.8
+            "date": "2025-11-06",
+            "move_pct": -18.36
           },
           {
-            "date": "2025-10-29",
-            "move_pct": -3.01
+            "date": "2025-08-28",
+            "move_pct": 18.45
           }
         ],
         "verdict": {
           "signal": "sell_premium",
           "label": "Premium expensive",
-          "reason": "Implied move (\u00b111.11%) is 37% above historical avg (\u00b18.1%, last 4). Market pricing more vol than typical.",
-          "suggested": "Iron condor (sell premium, neutral)",
+          "reason": "Implied move (\u00b133.76%) is 189% above historical avg (\u00b111.7%, last 4). Market pricing more vol than typical.",
+          "suggested": "Put credit spread (sell premium, bullish bias)",
           "confidence": "high",
-          "ratio": 1.37
+          "ratio": 2.89
         }
       }
     },
     {
       "rank": 21,
-      "ticker": "AVGO",
-      "name": "Broadcom",
-      "mentions": 7,
-      "rank_change": 8,
-      "momentum_label": "up 8",
-      "next_earnings": null,
-      "days_to_earnings": null,
-      "spot": 357.9,
-      "play": null
-    },
-    {
-      "rank": 22,
-      "ticker": "ES",
-      "name": "Eversource Energy",
-      "mentions": 7,
-      "rank_change": 79,
-      "momentum_label": "up 79",
-      "next_earnings": "2026-11-04",
-      "days_to_earnings": 58,
-      "spot": 71.05,
+      "ticker": "AMZN",
+      "name": "Amazon",
+      "mentions": 14,
+      "rank_change": -10,
+      "momentum_label": "down 10",
+      "next_earnings": "2026-10-29",
+      "days_to_earnings": 51,
+      "spot": 256.75,
       "play": {
-        "spot": 71.05,
-        "post_earnings_exp": "2027-01-15",
-        "days_post_earnings": 72,
-        "straddle_price": 7.08,
-        "implied_move_pct": 9.96,
-        "atm_iv_pct": 23.62,
+        "spot": 256.75,
+        "post_earnings_exp": "2026-11-20",
+        "days_post_earnings": 22,
+        "straddle_price": 33.4,
+        "implied_move_pct": 13.01,
+        "atm_iv_pct": 36.51,
         "historical_moves": [
           {
             "date": "2026-07-30",
-            "move_pct": -4.24
+            "move_pct": 19.82
           },
           {
-            "date": "2026-05-06",
-            "move_pct": -2.7
+            "date": "2026-04-29",
+            "move_pct": 2.06
           },
           {
-            "date": "2026-02-12",
-            "move_pct": 4.47
+            "date": "2026-02-05",
+            "move_pct": -9.73
           },
           {
-            "date": "2025-11-04",
-            "move_pct": -1.95
+            "date": "2025-10-30",
+            "move_pct": 6.04
           }
         ],
         "verdict": {
           "signal": "sell_premium",
           "label": "Premium expensive",
-          "reason": "Implied move (\u00b19.96%) is 198% above historical avg (\u00b13.3%, last 4). Market pricing more vol than typical.",
-          "suggested": "Put credit spread (sell premium, bullish bias)",
+          "reason": "Implied move (\u00b113.01%) is 38% above historical avg (\u00b19.4%, last 4). Market pricing more vol than typical.",
+          "suggested": "Iron condor (sell premium, neutral)",
           "confidence": "high",
-          "ratio": 2.98
+          "ratio": 1.38
         }
       }
     },
     {
+      "rank": 22,
+      "ticker": "USO",
+      "name": "United States Commodity Funds LLC - United States Oil Fund",
+      "mentions": 14,
+      "rank_change": 43,
+      "momentum_label": "up 43",
+      "next_earnings": null,
+      "days_to_earnings": null,
+      "spot": 144.52,
+      "play": null
+    },
+    {
       "rank": 23,
-      "ticker": "MSTR",
-      "name": "MicroStrategy",
-      "mentions": 7,
-      "rank_change": -15,
-      "momentum_label": "down 15",
-      "next_earnings": "2026-10-29",
-      "days_to_earnings": 52,
-      "spot": 142.8,
+      "ticker": "AMD",
+      "name": "AMD",
+      "mentions": 13,
+      "rank_change": 2,
+      "momentum_label": "up 2",
+      "next_earnings": "2026-11-03",
+      "days_to_earnings": 56,
+      "spot": 498.67,
       "play": {
-        "spot": 142.8,
+        "spot": 498.67,
         "post_earnings_exp": "2026-11-20",
-        "days_post_earnings": 22,
-        "straddle_price": 40.4,
-        "implied_move_pct": 28.29,
-        "atm_iv_pct": 77.96,
+        "days_post_earnings": 17,
+        "straddle_price": 101.75,
+        "implied_move_pct": 20.4,
+        "atm_iv_pct": 56.87,
         "historical_moves": [
           {
-            "date": "2026-07-30",
-            "move_pct": -0.05
+            "date": "2026-08-04",
+            "move_pct": -0.53
           },
           {
             "date": "2026-05-05",
-            "move_pct": 1.64
+            "move_pct": 23.38
           },
           {
-            "date": "2026-02-05",
-            "move_pct": 4.52
+            "date": "2026-02-03",
+            "move_pct": -18.71
           },
           {
-            "date": "2025-10-30",
-            "move_pct": -2.12
+            "date": "2025-11-04",
+            "move_pct": -1.28
           }
         ],
         "verdict": {
           "signal": "sell_premium",
           "label": "Premium expensive",
-          "reason": "Implied move (\u00b128.29%) is 1258% above historical avg (\u00b12.1%, last 4). Market pricing more vol than typical.",
-          "suggested": "Call credit spread (sell premium, bearish bias)",
+          "reason": "Implied move (\u00b120.4%) is 86% above historical avg (\u00b111.0%, last 4). Market pricing more vol than typical.",
+          "suggested": "Iron condor (sell premium, neutral)",
           "confidence": "high",
-          "ratio": 13.58
+          "ratio": 1.86
         }
       }
     },
     {
       "rank": 24,
-      "ticker": "META",
-      "name": "Meta Platforms (Facebook)",
-      "mentions": 7,
-      "rank_change": 13,
-      "momentum_label": "up 13",
-      "next_earnings": "2026-10-28",
+      "ticker": "QCOM",
+      "name": "QUALCOMM",
+      "mentions": 13,
+      "rank_change": null,
+      "momentum_label": "NEW",
+      "next_earnings": "2026-10-29",
       "days_to_earnings": 51,
-      "spot": 616.77,
+      "spot": 176.11,
       "play": {
-        "spot": 616.77,
+        "spot": 176.11,
         "post_earnings_exp": "2026-11-20",
-        "days_post_earnings": 23,
-        "straddle_price": 94.0,
-        "implied_move_pct": 15.24,
-        "atm_iv_pct": 42.73,
+        "days_post_earnings": 22,
+        "straddle_price": 30.85,
+        "implied_move_pct": 17.52,
+        "atm_iv_pct": 49.59,
         "historical_moves": [
           {
             "date": "2026-07-29",
-            "move_pct": -9.16
+            "move_pct": -6.93
           },
           {
             "date": "2026-04-29",
-            "move_pct": -8.85
+            "move_pct": 19.72
           },
           {
-            "date": "2026-01-28",
-            "move_pct": 9.71
+            "date": "2026-02-04",
+            "move_pct": -7.39
           },
           {
-            "date": "2025-10-29",
-            "move_pct": -11.31
+            "date": "2025-11-05",
+            "move_pct": 0.21
           }
         ],
         "verdict": {
           "signal": "sell_premium",
           "label": "Premium expensive",
-          "reason": "Implied move (\u00b115.24%) is 56% above historical avg (\u00b19.8%, last 4). Market pricing more vol than typical.",
+          "reason": "Implied move (\u00b117.52%) is 105% above historical avg (\u00b18.6%, last 4). Market pricing more vol than typical.",
           "suggested": "Iron condor (sell premium, neutral)",
           "confidence": "high",
-          "ratio": 1.56
+          "ratio": 2.05
         }
       }
     },
     {
       "rank": 25,
-      "ticker": "GOOG",
-      "name": "Alphabet (Google)",
-      "mentions": 6,
-      "rank_change": 14,
-      "momentum_label": "up 14",
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "mentions": 13,
+      "rank_change": -21,
+      "momentum_label": "down 21",
       "next_earnings": "2026-10-28",
-      "days_to_earnings": 51,
-      "spot": 335.31,
+      "days_to_earnings": 50,
+      "spot": 133.85,
       "play": {
-        "spot": 335.31,
+        "spot": 133.85,
         "post_earnings_exp": "2026-11-20",
         "days_post_earnings": 23,
-        "straddle_price": 41.22,
-        "implied_move_pct": 12.29,
-        "atm_iv_pct": 34.81,
+        "straddle_price": 27.85,
+        "implied_move_pct": 20.81,
+        "atm_iv_pct": 57.8,
         "historical_moves": [
           {
             "date": "2026-07-22",
-            "move_pct": -8.04
+            "move_pct": -9.92
           },
           {
-            "date": "2026-04-29",
-            "move_pct": 9.91
+            "date": "2026-04-22",
+            "move_pct": -15.34
           },
           {
-            "date": "2026-02-04",
-            "move_pct": -2.75
+            "date": "2026-01-28",
+            "move_pct": -11.43
           },
           {
             "date": "2025-10-29",
-            "move_pct": 5.02
+            "move_pct": -0.34
           }
         ],
         "verdict": {
           "signal": "sell_premium",
           "label": "Premium expensive",
-          "reason": "Implied move (\u00b112.29%) is 91% above historical avg (\u00b16.4%, last 4). Market pricing more vol than typical.",
-          "suggested": "Iron condor (sell premium, neutral)",
+          "reason": "Implied move (\u00b120.81%) is 125% above historical avg (\u00b19.3%, last 4). Market pricing more vol than typical.",
+          "suggested": "Call credit spread (sell premium, bearish bias)",
           "confidence": "high",
-          "ratio": 1.91
+          "ratio": 2.25
         }
       }
     }
