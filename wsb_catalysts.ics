@@ -3,134 +3,134 @@ VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261028
-DESCRIPTION:Meta Platforms (Facebook)\nWSB rank: #13\nMentions (24h): 40\nMomentum: down 4\nImplied move: ±11.69%\nATM straddle: $78.93 (exp 2026-10-30)\nHistorical avg: ±9.8% (last 4)\n\nVERDICT: Fairly priced\nImplied move (±11.69%) within 20% of historical avg (±9.8%\, last 4).\nSuggested: No edge from this signal — trade only on direction conviction\n\nhttps://apewisdom.io/wallstreetbets/
-SUMMARY:$META Earnings — #13 WSB (40 mentions\, down 4)
+DESCRIPTION:Meta Platforms (Facebook)\nWSB rank: #9\nMentions (24h): 33\nMomentum: up 13\nImplied move: ±12.09%\nATM straddle: $80.47 (exp 2026-10-30)\nHistorical avg: ±9.8% (last 4)\n\nVERDICT: Premium expensive\nImplied move (±12.09%) is 24% above historical avg (±9.8%\, last 4). Market pricing more vol than typical.\nSuggested: Iron condor (sell premium\, neutral)\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$META Earnings — #9 WSB (33 mentions\, up 13)
 UID:META-earnings-2026-10-28@wsb-tracker
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260930
-DESCRIPTION:Micron Technology\nWSB rank: #3\nMentions (24h): 83\nMomentum: flat\nImplied move: ±10.42%\nATM straddle: $103.58 (exp 2026-10-02)\nHistorical avg: ±7.0% (last 4)\n\nVERDICT: Premium expensive\nImplied move (±10.42%) is 50% above historical avg (±7.0%\, last 4). Market pricing more vol than typical.\nSuggested: Iron condor (sell premium\, neutral)\n\nhttps://apewisdom.io/wallstreetbets/
-SUMMARY:$MU Earnings — #3 WSB (83 mentions\, flat)
+DESCRIPTION:Micron Technology\nWSB rank: #1\nMentions (24h): 174\nMomentum: up 3\nImplied move: ±10.22%\nATM straddle: $103.8 (exp 2026-10-02)\nHistorical avg: ±7.0% (last 4)\n\nVERDICT: Premium expensive\nImplied move (±10.22%) is 47% above historical avg (±7.0%\, last 4). Market pricing more vol than typical.\nSuggested: Iron condor (sell premium\, neutral)\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$MU Earnings — #1 WSB (174 mentions\, up 3)
 UID:MU-earnings-2026-09-30@wsb-tracker
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261021
-DESCRIPTION:Tesla\nWSB rank: #20\nMentions (24h): 25\nMomentum: down 7\nImplied move: ±11.21%\nATM straddle: $41.02 (exp 2026-10-23)\nHistorical avg: ±5.9% (last 4)\n\nVERDICT: Premium expensive\nImplied move (±11.21%) is 89% above historical avg (±5.9%\, last 4). Market pricing more vol than typical.\nSuggested: Iron condor (sell premium\, neutral)\n\nhttps://apewisdom.io/wallstreetbets/
-SUMMARY:$TSLA Earnings — #20 WSB (25 mentions\, down 7)
+DESCRIPTION:Tesla\nWSB rank: #17\nMentions (24h): 17\nMomentum: down 4\nImplied move: ±10.76%\nATM straddle: $39.2 (exp 2026-10-23)\nHistorical avg: ±5.9% (last 4)\n\nVERDICT: Premium expensive\nImplied move (±10.76%) is 82% above historical avg (±5.9%\, last 4). Market pricing more vol than typical.\nSuggested: Iron condor (sell premium\, neutral)\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$TSLA Earnings — #17 WSB (17 mentions\, down 4)
 UID:TSLA-earnings-2026-10-21@wsb-tracker
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261117
-DESCRIPTION:NVIDIA\nWSB rank: #11\nMentions (24h): 45\nMomentum: down 4\nImplied move: ±11.96%\nATM straddle: $26.2 (exp 2026-11-20)\nHistorical avg: ±3.0% (last 4)\n\nVERDICT: Premium expensive\nImplied move (±11.96%) is 297% above historical avg (±3.0%\, last 4). Market pricing more vol than typical.\nSuggested: Iron condor (sell premium\, neutral)\n\nhttps://apewisdom.io/wallstreetbets/
-SUMMARY:$NVDA Earnings — #11 WSB (45 mentions\, down 4)
+DESCRIPTION:NVIDIA\nWSB rank: #6\nMentions (24h): 37\nMomentum: up 5\nImplied move: ±11.97%\nATM straddle: $26.6 (exp 2026-11-20)\nHistorical avg: ±3.0% (last 4)\n\nVERDICT: Premium expensive\nImplied move (±11.97%) is 298% above historical avg (±3.0%\, last 4). Market pricing more vol than typical.\nSuggested: Iron condor (sell premium\, neutral)\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$NVDA Earnings — #6 WSB (37 mentions\, up 5)
 UID:NVDA-earnings-2026-11-17@wsb-tracker
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261105
+DESCRIPTION:Chemours\nWSB rank: #13\nMentions (24h): 19\nMomentum: up 52\nImplied move: ±28.07%\nATM straddle: $4.03 (exp 2027-01-15)\nHistorical avg: ±12.8% (last 4)\n\nVERDICT: Premium expensive\nImplied move (±28.07%) is 120% above historical avg (±12.8%\, last 4). Market pricing more vol than typical.\nSuggested: Put credit spread (sell premium\, bullish bias)\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$CC Earnings — #13 WSB (19 mentions\, up 52)
+UID:CC-earnings-2026-11-05@wsb-tracker
+END:VEVENT
+BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261110
-DESCRIPTION:Nebius Group\nWSB rank: #10\nMentions (24h): 48\nMomentum: down 4\nImplied move: ±29.04%\nATM straddle: $62.58 (exp 2026-11-20)\nHistorical avg: ±20.1% (last 4)\n\nVERDICT: Premium expensive\nImplied move (±29.04%) is 45% above historical avg (±20.1%\, last 4). Market pricing more vol than typical.\nSuggested: Iron condor (sell premium\, neutral)\n\nhttps://apewisdom.io/wallstreetbets/
-SUMMARY:$NBIS Earnings — #10 WSB (48 mentions\, down 4)
+DESCRIPTION:Nebius Group\nWSB rank: #25\nMentions (24h): 12\nMomentum: down 22\nImplied move: ±28.57%\nATM straddle: $63.88 (exp 2026-11-20)\nHistorical avg: ±20.1% (last 4)\n\nVERDICT: Premium expensive\nImplied move (±28.57%) is 42% above historical avg (±20.1%\, last 4). Market pricing more vol than typical.\nSuggested: Call credit spread (sell premium\, bearish bias)\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$NBIS Earnings — #25 WSB (12 mentions\, down 22)
 UID:NBIS-earnings-2026-11-10@wsb-tracker
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261209
-DESCRIPTION:Broadcom\nWSB rank: #15\nMentions (24h): 32\nMomentum: down 5\nImplied move: ±16.34%\nATM straddle: $58.58 (exp 2026-12-18)\nHistorical avg: ±8.8% (last 4)\n\nVERDICT: Premium expensive\nImplied move (±16.34%) is 85% above historical avg (±8.8%\, last 4). Market pricing more vol than typical.\nSuggested: Iron condor (sell premium\, neutral)\n\nhttps://apewisdom.io/wallstreetbets/
-SUMMARY:$AVGO Earnings — #15 WSB (32 mentions\, down 5)
-UID:AVGO-earnings-2026-12-09@wsb-tracker
+DTSTART;VALUE=DATE:20261102
+DESCRIPTION:ON Semiconductor\nWSB rank: #18\nMentions (24h): 17\nMomentum: up 52\nImplied move: ±18.72%\nATM straddle: $13.1 (exp 2026-11-20)\nHistorical avg: ±2.1% (last 4)\n\nVERDICT: Premium expensive\nImplied move (±18.72%) is 802% above historical avg (±2.1%\, last 4). Market pricing more vol than typical.\nSuggested: Put credit spread (sell premium\, bullish bias)\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$ON Earnings — #18 WSB (17 mentions\, up 52)
+UID:ON-earnings-2026-11-02@wsb-tracker
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261106
-DESCRIPTION:Sandisk\nWSB rank: #12\nMentions (24h): 42\nMomentum: up 4\nImplied move: ±24.87%\nATM straddle: $424.7 (exp 2026-11-20)\nHistorical avg: ±10.8% (last 4)\n\nVERDICT: Premium expensive\nImplied move (±24.87%) is 130% above historical avg (±10.8%\, last 4). Market pricing more vol than typical.\nSuggested: Iron condor (sell premium\, neutral)\n\nhttps://apewisdom.io/wallstreetbets/
-SUMMARY:$SNDK Earnings — #12 WSB (42 mentions\, up 4)
+DESCRIPTION:Sandisk\nWSB rank: #2\nMentions (24h): 130\nMomentum: up 13\nImplied move: ±24.97%\nATM straddle: $447.5 (exp 2026-11-20)\nHistorical avg: ±10.8% (last 4)\n\nVERDICT: Premium expensive\nImplied move (±24.97%) is 131% above historical avg (±10.8%\, last 4). Market pricing more vol than typical.\nSuggested: Iron condor (sell premium\, neutral)\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$SNDK Earnings — #2 WSB (130 mentions\, up 13)
 UID:SNDK-earnings-2026-11-06@wsb-tracker
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261022
-DESCRIPTION:Boyd Gaming\nWSB rank: #14\nMentions (24h): 33\nMomentum: up 340\nImplied move: ±9.32%\nATM straddle: $6.85 (exp 2026-12-18)\nHistorical avg: ±2.5% (last 4)\n\nVERDICT: Premium expensive\nImplied move (±9.32%) is 274% above historical avg (±2.5%\, last 4). Market pricing more vol than typical.\nSuggested: Put credit spread (sell premium\, bullish bias)\n\nhttps://apewisdom.io/wallstreetbets/
-SUMMARY:$BYD Earnings — #14 WSB (33 mentions\, up 340)
-UID:BYD-earnings-2026-10-22@wsb-tracker
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261103
-DESCRIPTION:AMD\nWSB rank: #7\nMentions (24h): 52\nMomentum: up 4\nImplied move: ±18.61%\nATM straddle: $101.43 (exp 2026-11-20)\nHistorical avg: ±11.0% (last 4)\n\nVERDICT: Premium expensive\nImplied move (±18.61%) is 70% above historical avg (±11.0%\, last 4). Market pricing more vol than typical.\nSuggested: Iron condor (sell premium\, neutral)\n\nhttps://apewisdom.io/wallstreetbets/
-SUMMARY:$AMD Earnings — #7 WSB (52 mentions\, up 4)
-UID:AMD-earnings-2026-11-03@wsb-tracker
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261020
-DESCRIPTION:General Motors\nWSB rank: #17\nMentions (24h): 31\nMomentum: up 102\nImplied move: ±9.43%\nATM straddle: $7.73 (exp 2026-10-23)\nHistorical avg: ±8.3% (last 4)\n\nVERDICT: Fairly priced\nImplied move (±9.43%) within 14% of historical avg (±8.3%\, last 4).\nSuggested: No edge from this signal — trade only on direction conviction\n\nhttps://apewisdom.io/wallstreetbets/
-SUMMARY:$GM Earnings — #17 WSB (31 mentions\, up 102)
-UID:GM-earnings-2026-10-20@wsb-tracker
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261109
-DESCRIPTION:Rocket Lab USA\nWSB rank: #23\nMentions (24h): 23\nMomentum: up 34\nImplied move: ±29.8%\nATM straddle: $19.12 (exp 2026-12-18)\nHistorical avg: ±7.6% (last 4)\n\nVERDICT: Premium expensive\nImplied move (±29.8%) is 293% above historical avg (±7.6%\, last 4). Market pricing more vol than typical.\nSuggested: Put credit spread (sell premium\, bullish bias)\n\nhttps://apewisdom.io/wallstreetbets/
-SUMMARY:$RKLB Earnings — #23 WSB (23 mentions\, up 34)
-UID:RKLB-earnings-2026-11-09@wsb-tracker
+DTSTART;VALUE=DATE:20261116
+DESCRIPTION:enCore Energy\nWSB rank: #11\nMentions (24h): 24\nMomentum: up 53\nImplied move: ±44.44%\nATM straddle: $0.4 (exp 2027-01-15)\nHistorical avg: ±7.8% (last 4)\n\nVERDICT: Premium expensive\nImplied move (±44.44%) is 470% above historical avg (±7.8%\, last 4). Market pricing more vol than typical.\nSuggested: Put credit spread (sell premium\, bullish bias)\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$EU Earnings — #11 WSB (24 mentions\, up 53)
+UID:EU-earnings-2026-11-16@wsb-tracker
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261029
-DESCRIPTION:DTE Energy\nWSB rank: #8\nMentions (24h): 50\nMomentum: down 3\nImplied move: ±9.1%\nATM straddle: $11.75 (exp 2027-01-15)\nHistorical avg: ±1.9% (last 4)\n\nVERDICT: Premium expensive\nImplied move (±9.1%) is 372% above historical avg (±1.9%\, last 4). Market pricing more vol than typical.\nSuggested: Iron condor (sell premium\, neutral)\n\nhttps://apewisdom.io/wallstreetbets/
-SUMMARY:$DTE Earnings — #8 WSB (50 mentions\, down 3)
+DESCRIPTION:Reddit\nWSB rank: #23\nMentions (24h): 14\nMomentum: down 15\nImplied move: ±18.0%\nATM straddle: $27.15 (exp 2026-10-30)\nHistorical avg: ±10.7% (last 4)\n\nVERDICT: Premium expensive\nImplied move (±18.0%) is 68% above historical avg (±10.7%\, last 4). Market pricing more vol than typical.\nSuggested: Call credit spread (sell premium\, bearish bias)\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$RDDT Earnings — #23 WSB (14 mentions\, down 15)
+UID:RDDT-earnings-2026-10-29@wsb-tracker
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261103
+DESCRIPTION:AMD\nWSB rank: #5\nMentions (24h): 48\nMomentum: up 2\nImplied move: ±18.78%\nATM straddle: $105.12 (exp 2026-11-20)\nHistorical avg: ±11.0% (last 4)\n\nVERDICT: Premium expensive\nImplied move (±18.78%) is 71% above historical avg (±11.0%\, last 4). Market pricing more vol than typical.\nSuggested: Iron condor (sell premium\, neutral)\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$AMD Earnings — #5 WSB (48 mentions\, up 2)
+UID:AMD-earnings-2026-11-03@wsb-tracker
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261029
+DESCRIPTION:MicroStrategy\nWSB rank: #7\nMentions (24h): 37\nMomentum: up 37\nImplied move: ±19.18%\nATM straddle: $29.52 (exp 2026-10-30)\nHistorical avg: ±2.1% (last 4)\n\nVERDICT: Premium expensive\nImplied move (±19.18%) is 821% above historical avg (±2.1%\, last 4). Market pricing more vol than typical.\nSuggested: Put credit spread (sell premium\, bullish bias)\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$MSTR Earnings — #7 WSB (37 mentions\, up 37)
+UID:MSTR-earnings-2026-10-29@wsb-tracker
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261105
+DESCRIPTION:CLEAR Secure\nWSB rank: #24\nMentions (24h): 12\nMomentum: up 21\nImplied move: ±18.5%\nATM straddle: $7.05 (exp 2026-11-20)\nHistorical avg: ±15.0% (last 4)\n\nVERDICT: Premium expensive\nImplied move (±18.5%) is 23% above historical avg (±15.0%\, last 4). Market pricing more vol than typical.\nSuggested: Put credit spread (sell premium\, bullish bias)\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$YOU Earnings — #24 WSB (12 mentions\, up 21)
+UID:YOU-earnings-2026-11-05@wsb-tracker
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261029
+DESCRIPTION:DTE Energy\nWSB rank: #8\nMentions (24h): 36\nMomentum: up 2\nImplied move: ±8.44%\nATM straddle: $10.85 (exp 2027-01-15)\nHistorical avg: ±1.9% (last 4)\n\nVERDICT: Premium expensive\nImplied move (±8.44%) is 338% above historical avg (±1.9%\, last 4). Market pricing more vol than typical.\nSuggested: Iron condor (sell premium\, neutral)\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$DTE Earnings — #8 WSB (36 mentions\, up 2)
 UID:DTE-earnings-2026-10-29@wsb-tracker
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261022
-DESCRIPTION:Intel\nWSB rank: #4\nMentions (24h): 67\nMomentum: up 11\nImplied move: ±15.9%\nATM straddle: $17.1 (exp 2026-10-23)\nHistorical avg: ±14.3% (last 4)\n\nVERDICT: Fairly priced\nImplied move (±15.9%) within 11% of historical avg (±14.3%\, last 4).\nSuggested: No edge from this signal — trade only on direction conviction\n\nhttps://apewisdom.io/wallstreetbets/
-SUMMARY:$INTC Earnings — #4 WSB (67 mentions\, up 11)
-UID:INTC-earnings-2026-10-22@wsb-tracker
-END:VEVENT
-BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261028
-DESCRIPTION:Alphabet (Google)\nWSB rank: #16\nMentions (24h): 31\nMomentum: up 16\nImplied move: ±9.54%\nATM straddle: $33.2 (exp 2026-10-30)\nHistorical avg: ±6.4% (last 4)\n\nVERDICT: Premium expensive\nImplied move (±9.54%) is 48% above historical avg (±6.4%\, last 4). Market pricing more vol than typical.\nSuggested: Put credit spread (sell premium\, bullish bias)\n\nhttps://apewisdom.io/wallstreetbets/
-SUMMARY:$GOOG Earnings — #16 WSB (31 mentions\, up 16)
+DESCRIPTION:Alphabet (Google)\nWSB rank: #10\nMentions (24h): 28\nMomentum: up 16\nImplied move: ±9.57%\nATM straddle: $32.98 (exp 2026-10-30)\nHistorical avg: ±6.4% (last 4)\n\nVERDICT: Premium expensive\nImplied move (±9.57%) is 49% above historical avg (±6.4%\, last 4). Market pricing more vol than typical.\nSuggested: Put credit spread (sell premium\, bullish bias)\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$GOOG Earnings — #10 WSB (28 mentions\, up 16)
 UID:GOOG-earnings-2026-10-28@wsb-tracker
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261022
+DESCRIPTION:Intel\nWSB rank: #15\nMentions (24h): 18\nMomentum: down 9\nImplied move: ±17.59%\nATM straddle: $19.1 (exp 2026-10-23)\nHistorical avg: ±14.3% (last 4)\n\nVERDICT: Premium expensive\nImplied move (±17.59%) is 23% above historical avg (±14.3%\, last 4). Market pricing more vol than typical.\nSuggested: Iron condor (sell premium\, neutral)\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$INTC Earnings — #15 WSB (18 mentions\, down 9)
+UID:INTC-earnings-2026-10-22@wsb-tracker
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261104
+DESCRIPTION:Robinhood\nWSB rank: #21\nMentions (24h): 15\nMomentum: up 19\nImplied move: ±22.07%\nATM straddle: $26.45 (exp 2026-11-20)\nHistorical avg: ±9.7% (last 4)\n\nVERDICT: Premium expensive\nImplied move (±22.07%) is 127% above historical avg (±9.7%\, last 4). Market pricing more vol than typical.\nSuggested: Put credit spread (sell premium\, bullish bias)\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$HOOD Earnings — #21 WSB (15 mentions\, up 19)
+UID:HOOD-earnings-2026-11-04@wsb-tracker
+END:VEVENT
+BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261020
-DESCRIPTION:Netflix\nWSB rank: #5\nMentions (24h): 61\nMomentum: up 89\nImplied move: ±10.83%\nATM straddle: $7.8 (exp 2026-10-23)\nHistorical avg: ±7.2% (last 4)\n\nVERDICT: Premium expensive\nImplied move (±10.83%) is 50% above historical avg (±7.2%\, last 4). Market pricing more vol than typical.\nSuggested: Put credit spread (sell premium\, bullish bias)\n\nhttps://apewisdom.io/wallstreetbets/
-SUMMARY:$NFLX Earnings — #5 WSB (61 mentions\, up 89)
+DESCRIPTION:Netflix\nWSB rank: #19\nMentions (24h): 16\nMomentum: up 2\nImplied move: ±10.52%\nATM straddle: $7.55 (exp 2026-10-23)\nHistorical avg: ±7.2% (last 4)\n\nVERDICT: Premium expensive\nImplied move (±10.52%) is 45% above historical avg (±7.2%\, last 4). Market pricing more vol than typical.\nSuggested: Iron condor (sell premium\, neutral)\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$NFLX Earnings — #19 WSB (16 mentions\, up 2)
 UID:NFLX-earnings-2026-10-20@wsb-tracker
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261103
-DESCRIPTION:SpaceX\nWSB rank: #6\nMentions (24h): 57\nMomentum: down 2\nImplied move: ±17.53%\nATM straddle: $26.6 (exp 2026-11-20)\nHistorical avg: ±5.5% (last 1)\n\nhttps://apewisdom.io/wallstreetbets/
-SUMMARY:$SPCX Earnings — #6 WSB (57 mentions\, down 2)
+DESCRIPTION:SpaceX\nWSB rank: #20\nMentions (24h): 16\nMomentum: down 15\nImplied move: ±17.75%\nATM straddle: $27.1 (exp 2026-11-20)\nHistorical avg: ±5.5% (last 1)\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$SPCX Earnings — #20 WSB (16 mentions\, down 15)
 UID:SPCX-earnings-2026-11-03@wsb-tracker
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261111
-DESCRIPTION:CoreWeave\nWSB rank: #25\nMentions (24h): 22\nMomentum: up 22\nImplied move: ±26.79%\nATM straddle: $21.45 (exp 2026-11-20)\nHistorical avg: ±18.3% (last 4)\n\nVERDICT: Premium expensive\nImplied move (±26.79%) is 46% above historical avg (±18.3%\, last 4). Market pricing more vol than typical.\nSuggested: Put credit spread (sell premium\, bullish bias)\n\nhttps://apewisdom.io/wallstreetbets/
-SUMMARY:$CRWV Earnings — #25 WSB (22 mentions\, up 22)
-UID:CRWV-earnings-2026-11-11@wsb-tracker
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261127
-DESCRIPTION:Dell\nWSB rank: #21\nMentions (24h): 24\nMomentum: up 15\nImplied move: ±26.6%\nATM straddle: $155.02 (exp 2026-12-18)\nHistorical avg: ±17.6% (last 4)\n\nVERDICT: Premium expensive\nImplied move (±26.6%) is 51% above historical avg (±17.6%\, last 4). Market pricing more vol than typical.\nSuggested: Put credit spread (sell premium\, bullish bias)\n\nhttps://apewisdom.io/wallstreetbets/
-SUMMARY:$DELL Earnings — #21 WSB (24 mentions\, up 15)
-UID:DELL-earnings-2026-11-27@wsb-tracker
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261029
-DESCRIPTION:Apple\nWSB rank: #22\nMentions (24h): 23\nMomentum: up 1\nImplied move: ±7.29%\nATM straddle: $24.3 (exp 2026-10-30)\nHistorical avg: ±3.4% (last 4)\n\nVERDICT: Premium expensive\nImplied move (±7.29%) is 111% above historical avg (±3.4%\, last 4). Market pricing more vol than typical.\nSuggested: Iron condor (sell premium\, neutral)\n\nhttps://apewisdom.io/wallstreetbets/
-SUMMARY:$AAPL Earnings — #22 WSB (23 mentions\, up 1)
-UID:AAPL-earnings-2026-10-29@wsb-tracker
-END:VEVENT
-BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261109
-DESCRIPTION:AST SpaceMobile\nWSB rank: #24\nMentions (24h): 22\nMomentum: up 19\nImplied move: ±26.37%\nATM straddle: $15.58 (exp 2026-11-20)\nHistorical avg: ±5.5% (last 4)\n\nVERDICT: Premium expensive\nImplied move (±26.37%) is 377% above historical avg (±5.5%\, last 4). Market pricing more vol than typical.\nSuggested: Put credit spread (sell premium\, bullish bias)\n\nhttps://apewisdom.io/wallstreetbets/
-SUMMARY:$ASTS Earnings — #24 WSB (22 mentions\, up 19)
+DESCRIPTION:AST SpaceMobile\nWSB rank: #14\nMentions (24h): 19\nMomentum: up 10\nImplied move: ±26.44%\nATM straddle: $15.47 (exp 2026-11-20)\nHistorical avg: ±5.5% (last 4)\n\nVERDICT: Premium expensive\nImplied move (±26.44%) is 378% above historical avg (±5.5%\, last 4). Market pricing more vol than typical.\nSuggested: Iron condor (sell premium\, neutral)\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$ASTS Earnings — #14 WSB (19 mentions\, up 10)
 UID:ASTS-earnings-2026-11-09@wsb-tracker
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261028
-DESCRIPTION:Alphabet (Google)\nWSB rank: #9\nMentions (24h): 48\nMomentum: up 15\nImplied move: ±9.68%\nATM straddle: $34.05 (exp 2026-10-30)\nHistorical avg: ±6.6% (last 4)\n\nVERDICT: Premium expensive\nImplied move (±9.68%) is 48% above historical avg (±6.6%\, last 4). Market pricing more vol than typical.\nSuggested: Put credit spread (sell premium\, bullish bias)\n\nhttps://apewisdom.io/wallstreetbets/
-SUMMARY:$GOOGL Earnings — #9 WSB (48 mentions\, up 15)
+DESCRIPTION:Alphabet (Google)\nWSB rank: #12\nMentions (24h): 21\nMomentum: up 2\nImplied move: ±9.68%\nATM straddle: $33.83 (exp 2026-10-30)\nHistorical avg: ±6.6% (last 4)\n\nVERDICT: Premium expensive\nImplied move (±9.68%) is 48% above historical avg (±6.6%\, last 4). Market pricing more vol than typical.\nSuggested: Iron condor (sell premium\, neutral)\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$GOOGL Earnings — #12 WSB (21 mentions\, up 2)
 UID:GOOGL-earnings-2026-10-28@wsb-tracker
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261103
-DESCRIPTION:Ultragenyx\nWSB rank: #18\nMentions (24h): 31\nMomentum: up 229\nImplied move: ±27.34%\nATM straddle: $3.92 (exp 2026-11-20)\nHistorical avg: ±5.9% (last 4)\n\nVERDICT: Premium expensive\nImplied move (±27.34%) is 361% above historical avg (±5.9%\, last 4). Market pricing more vol than typical.\nSuggested: Put credit spread (sell premium\, bullish bias)\n\nhttps://apewisdom.io/wallstreetbets/
-SUMMARY:$RARE Earnings — #18 WSB (31 mentions\, up 229)
-UID:RARE-earnings-2026-11-03@wsb-tracker
+DTSTART;VALUE=DATE:20261209
+DESCRIPTION:Broadcom\nWSB rank: #16\nMentions (24h): 18\nMomentum: up 2\nImplied move: ±16.44%\nATM straddle: $58.78 (exp 2026-12-18)\nHistorical avg: ±8.8% (last 4)\n\nVERDICT: Premium expensive\nImplied move (±16.44%) is 86% above historical avg (±8.8%\, last 4). Market pricing more vol than typical.\nSuggested: Iron condor (sell premium\, neutral)\n\nhttps://apewisdom.io/wallstreetbets/
+SUMMARY:$AVGO Earnings — #16 WSB (18 mentions\, up 2)
+UID:AVGO-earnings-2026-12-09@wsb-tracker
 END:VEVENT
 END:VCALENDAR
